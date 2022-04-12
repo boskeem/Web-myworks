@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>체크박스 로그인 폼 디자인</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form class="login">
+    <h1>로그인 계정</h1>
+    <span class="field">사용자 이메일</span>
+    <input type="email" placeholder="이메일을 입력해주세요.">
+    <span class="field">사용자 비밀번호</span>
+    <input type="password" placeholder="비밀번호를 입력해주세요.">
+    <div class="save-info">
+      <label>
+        <input type="checkbox" id="save-email"><em></em>이메일 저장하기
+      </label>
+      <a href="#none">비밀번호를 잊으셨습니까?</a>
+    </div>
+    <div class="event-info">
+      이벤트 메일 받기를 원하십니까?
+      <div class="custom-checkbox">
+        <label>
+          <input type="radio" name="event" checked><em></em>예
+        </label>
+        <label>
+          <input type="radio" name="event"><em></em>아니오
+        </label>
+      </div>
+    </div>
+    <input type="button" value="로그인">
+    <div class="sns-info">
+      또는 다른 계정 로그인
+      <div class="sns">
+        <a href="#none"><i class="xi-google"></i></a>
+        <a href="#none"><i class="xi-facebook"></i></a>
+        <a href="#none"><i class="xi-instagram"></i></a>
+        <a href="#none"><i class="xi-twitter"></i></a>
+      </div>
+    </div>
+    <div class="signup-info">
+      <span>아직 가입하지 않으셨나요?</span>
+      <a href="#none">가입하기</a>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>풀스크린 네비게이션 반응형 페이지</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+  <div class="toggle">
+    <i class="xi-plus-thin"></i>
+  </div>
+  <div class="overlay"></div>
+
+  <ul class="gnb">
+    <li><a href="#feature1">Home</a></li>
+    <li><a href="#feature2">LIFE</a></li>
+    <li><a href="#feature3">SUCCESS</a></li>
+    <li><a href="#feature4">MOTIVATED</a></li>
+    <li><a href="#feature5">LEARNING</a></li>
+    <li><a href="#feature6">WELLNESS</a></li>
+  </ul>
+
+  <div class="container">
+    <section class="welcome" id="feature1">
+      <img src="images/photo.jpg">
+    </section>
+    <section id="feature2">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet</b>
+          <h1>Section : LIFE POTENTIAL</h1>
+          <p>
+            One of the more surprising aspects of meditation is its impact on your immune system. It turns out that regularly calming your mind has a way of building up resistance to various illnesses. That’s not to say that meditation is a firewall that will prevent you from ever getting the flu again.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature3">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet</b>
+          <h1>Section : SUCCESS MINDSET</h1>
+          <p>
+            Everyone experiences stress. If you are conscious, then you experience stress. Some sources of stress are pleasant, such as getting married, going on a vacation, moving into your dream home. Many sources of stress are unpleasant, like being fired from work, the loss of a loved one, the cost of having your car repaired.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature4">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet</b>
+          <h1>Section : STAYING MOTIVATED</h1>
+          <p>
+            Everyone has experienced how much sleep impacts their mood and their ability to function effectively. A good night’s rest sets the foundation for the day ahead. Likewise, a night of tossing and turning creates an obstacle to pushing forward toward your goals the following day.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature5">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet</b>
+          <h1>Section : LEARNING</h1>
+          <p>
+            Although practicing meditation does not lead to eternal youth, it does appear to reduce the speed at which cells age and eventually decay. It seems likely that part of the mechanism by which meditation induces this effect is by increasing the presence of telomerase, an enzyme that protects genes from aging.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="feature6">
+      <div class="inner">
+        <div class="heading">
+          <b>Lorem ipsum dolor sit amet</b>
+          <h1>Section : MENTAL WELLNESS</h1>
+          <p>
+            Although research has not shown that one form of meditation is superior to another, it has shown that it only takes about ten minutes of meditation each day for someone to experience these benefits. Moreover, the improvements in memory begin to show up soon after someone begins to make meditation a daily habit.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    $('.toggle').click(function(){
+      $('.toggle, .overlay, .gnb').toggleClass('active')
+    })
+    $('.gnb a').click(function(){
+      $('.toggle, .overlay, .gnb').removeClass('active')
+    })
+  </script>
+
+</body>
+</html>

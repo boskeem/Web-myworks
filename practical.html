@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical Publishing</title>
+  <!-- UIkit CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+  <!-- XEION CDN -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <style>
+    /* Fontawesome 4.7 */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    
+    /* Reset CSS */
+    * {
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif !important;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    button,
+    input {
+      outline: none;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      line-height: 1.5em;
+      margin-top: 0;
+      font-weight: normal;
+    }
+
+    /* Default CSS */
+    body {
+      font-weight: 300;
+    }
+    .uk-link,
+    a {
+      color: #333;
+    }
+    .uk-link:hover,
+    a:hover {
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Section : Practical Coding */
+    .practical {
+      background-color: #f8f8f8;
+      padding: 50px 0;
+    }
+    .practical .practical-header {
+      text-align: right;
+    }
+    .practical .content {
+      width: 1280px;
+      margin: auto;
+    }
+    .practical .practical-items {
+      margin-top: 50px;
+    }
+    .practical .practical-items h3 {
+      margin-left: 15px;
+      font-weight: bold;
+      color: #ea8685;
+    }
+    .practical-slider .uk-slider-items a li img {
+      border: 1px solid #eee;
+      border-radius: 5px;
+      width: 300px;
+      height: 200px;
+    }
+    @media (max-width: 1280px) {
+      .practical .content {
+        width: 100%;
+      }
+    }
+    @media (max-width: 768px) {
+      .practical .practical-header {
+        text-align: center;
+      }
+      .uk-position-center-left,
+      .uk-position-center-right {
+        display: none !important;
+      }
+    }
+
+    /* UIKit Custom CSS - 라이트박스 */
+    .uk-lightbox-iframe {
+      /* border: 10px solid red; */
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+    }
+    .uk-lightbox-button {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      opacity: 1;
+    }
+    /* .portfolio-result .uk-lightbox .uk-lightbox-toolbar {
+      background-color: transparent;
+    } */
+    .uk-lightbox-toolbar-icon {
+      background-color: #e66767;
+      border-radius: 20%;
+      padding: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: 0.35s;
+    }
+    .uk-lightbox-toolbar-icon:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="practical">
+    <div class="content">
+      <div class="practical-header">
+        <h1>PRACTICAL PUBLISHING</h1>
+      </div>
+      <div class="practical-items">
+        <h3>Card UI</h3>
+        <div class="practical-slider" uk-slider>
+
+          <div class="uk-position-relative">
+
+            <div class="uk-slider-container uk-light">
+              <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-small" uk-lightbox>
+                <a href="portfolio/practical-coding/card-ui/01/index.html" data-type="iframe" data-caption="아이콘 UI 화면 및 버튼 디자인">
+                  <li>
+                    <img src="images/ui-01.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/02/index.html" data-type="iframe" data-caption="테이블 표 UI 디자인">
+                  <li>
+                    <img src="images/ui-02.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/03/index.html" data-type="iframe" data-caption="그라디언트 서비스 가격표 UI 디자인">
+                  <li>
+                    <img src="images/ui-03.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/04/index.html" data-type="iframe" data-caption="쇼핑몰 아이템 UI 디자인">
+                  <li>
+                    <img src="images/ui-04.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/05/index.html" data-type="iframe" data-caption="상세 상품 카드 UI 디자인">
+                  <li>
+                    <img src="images/ui-05.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/06/index.html" data-type="iframe" data-caption="프로필 카드 UI 디자인(다크모드)">
+                  <li>
+                    <img src="images/ui-06.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/07/index.html" data-type="iframe" data-caption="쇼핑몰 아이템 옵션 UI 디자인">
+                  <li>
+                    <img src="images/ui-07.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/08/index.html" data-type="iframe" data-caption="상세 메뉴 목록 UI 디자인">
+                  <li>
+                    <img src="images/ui-08.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/09/index.html" data-type="iframe" data-caption="flex 개인 프로필 카드 UI 디자인">
+                  <li>
+                    <img src="images/ui-09.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/10/index.html" data-type="iframe" data-caption="flex 반응형 카드 UI 디자인">
+                  <li>
+                    <img src="images/ui-10.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/11/index.html" data-type="iframe" data-caption="flex 반응형 리스트 UI 디자인">
+                  <li>
+                    <img src="images/ui-11.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/12/index.html" data-type="iframe" data-caption="flex 반응형 블로그 UI 디자인">
+                  <li>
+                    <img src="images/ui-12.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/card-ui/13/index.html" data-type="iframe" data-caption="grid 반응형 블로그 갤러리 UI 디자인">
+                  <li>
+                    <img src="images/ui-13.PNG">
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+            <div class="uk-hidden@s uk-light">
+              <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+
+            <div class="uk-visible@s">
+              <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
+            </div>
+
+          </div>
+
+          <!-- <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul> -->
+
+        </div>
+      </div>
+      <div class="practical-items">
+        <h3>Form</h3>
+        <div class="practical-slider" uk-slider>
+
+          <div class="uk-position-relative">
+
+            <div class="uk-slider-container uk-light">
+              <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-small" uk-lightbox>
+                <a href="portfolio/practical-coding/form/01/index.html" data-type="iframe" data-caption="체크박스 로그인 폼 디자인">
+                  <li>
+                    <img src="images/fm-01.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/form/02/index.html" data-type="iframe" data-caption="로그인 계정버튼 디자인">
+                  <li>
+                    <img src="images/fm-02.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/form/03/index.html" data-type="iframe" data-caption="소셜 회원가입 디자인">
+                  <li>
+                    <img src="images/fm-03.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/form/04/index.html" data-type="iframe" data-caption="flex 반응형 로그인 폼 디자인">
+                  <li>
+                    <img src="images/fm-04.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/form/05/index.html" data-type="iframe" data-caption="flex 반응형 상담 폼 디자인">
+                  <li>
+                    <img src="images/fm-05.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/form/06/index.html" data-type="iframe" data-caption="폰트어썸 활용 입력 필드">
+                  <li>
+                    <img src="images/fm-06.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/form/07/index.html" data-type="iframe" data-caption="가상클래스 로그인 폼 화면">
+                  <li>
+                    <img src="images/fm-07.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/form/08/index.html" data-type="iframe" data-caption="풀스크린 백그라운드 검색 폼 화면">
+                  <li>
+                    <img src="images/fm-08.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/form/09/index.html" data-type="iframe" data-caption="jQuery 유효성 체크 로그인 폼">
+                  <li>
+                    <img src="images/fm-09.png">
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+            <div class="uk-hidden@s uk-light">
+              <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+
+            <div class="uk-visible@s">
+              <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
+            </div>
+
+          </div>
+
+          <!-- <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul> -->
+
+        </div>
+      </div>
+      <div class="practical-items">
+        <h3>Hover-Animation / Navigation</h3>
+        <div class="practical-slider" uk-slider>
+
+          <div class="uk-position-relative">
+
+            <div class="uk-slider-container uk-light">
+              <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-small" uk-lightbox>
+                <a href="portfolio/practical-coding/hover-animation/01/index.html" data-type="iframe" data-caption="호버 보더 네비게이션">
+                  <li>
+                    <img src="images/hv-01.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/hover-animation/02/index.html" data-type="iframe" data-caption="트랜스폼 아웃라인 호버 텍스트">
+                  <li>
+                    <img src="images/hv-02.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/hover-animation/03/index.html" data-type="iframe" data-caption="아이콘 툴팁(tooltip) 호버 이펙트">
+                  <li>
+                    <img src="images/hv-03.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/hover-animation/04/index.html" data-type="iframe" data-caption="클립패스 이미지 호버 오버레이">
+                  <li>
+                    <img src="images/hv-04.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/hover-animation/05/index.html" data-type="iframe" data-caption="앱 UI 레이어 호버 3D">
+                  <li>
+                    <img src="images/hv-05.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/hover-animation/06/index.html" data-type="iframe" data-caption="상하 슬라이드 호버 콘텐츠">
+                  <li>
+                    <img src="images/hv-06.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/hover-animation/07/index.html" data-type="iframe" data-caption="attr() 상하 호버 이펙트">
+                  <li>
+                    <img src="images/hv-07.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/hover-animation/08/index.html" data-type="iframe" data-caption="rotate & letter spacing 호버 이펙트">
+                  <li>
+                    <img src="images/hv-08.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/hover-animation/09/index.html" data-type="iframe" data-caption="sns 아이콘 호버 이펙트">
+                  <li>
+                    <img src="images/hv-09.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/hover-animation/10/index.html" data-type="iframe" data-caption="스킬 프로그래스바 애니메이션">
+                  <li>
+                    <img src="images/hv-10.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/hover-animation/11/index.html" data-type="iframe" data-caption="호버 백그라운드 체인지">
+                  <li>
+                    <img src="images/hv-11.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/navigation/01/index.html" data-type="iframe" data-caption="호버 메뉴 opacity&폰트어썸">
+                  <li>
+                    <img src="images/nav-01.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/navigation/02/index.html" data-type="iframe" data-caption="호버 보더 네비게이션">
+                  <li>
+                    <img src="images/nav-02.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/navigation/03/index.html" data-type="iframe" data-caption="content attr() 활용">
+                  <li>
+                    <img src="images/nav-03.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/navigation/04/index.html" data-type="iframe" data-caption="flex 레이아웃 이미지 어코디언">
+                  <li>
+                    <img src="images/nav-04.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/navigation/05/index01.html" data-type="iframe" data-caption="3타입 상단 네비게이션">
+                  <li>
+                    <img src="images/nav-05.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/navigation/06/CSS방식/index.html" data-type="iframe" data-caption="드롭다운(css / jQuery) 네비게이션">
+                  <li>
+                    <img src="images/nav-06.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/navigation/07/index.html" data-type="iframe" data-caption="flex 반응형 헤더 네비게이션">
+                  <li>
+                    <img src="images/nav-07.PNG">
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+            <div class="uk-hidden@s uk-light">
+              <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+
+            <div class="uk-visible@s">
+              <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="practical-items">
+        <h3>Prototype</h3>
+        <div class="practical-slider" uk-slider>
+
+          <div class="uk-position-relative">
+
+            <div class="uk-slider-container uk-light">
+              <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-small" uk-lightbox>
+                <a href="portfolio/practical-coding/prototype/01/index.html" data-type="iframe" data-caption="풀스크린 네비게이션 반응형 페이지">
+                  <li>
+                    <img src="images/pt-01.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/prototype/02/index.html" data-type="iframe" data-caption="LNB & GNB 드롭다운 헤더">
+                  <li>
+                    <img src="images/pt-02.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/prototype/03/index.html" data-type="iframe" data-caption="flex 반응형 헤더 갤러리">
+                  <li>
+                    <img src="images/pt-03.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/prototype/04/index.html" data-type="iframe" data-caption="jQuery 어코디언 콘텐츠 슬라이드">
+                  <li>
+                    <img src="images/pt-04.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/prototype/05/index.html" data-type="iframe" data-caption="jQuery 비디오 랜딩페이지">
+                  <li>
+                    <img src="images/pt-05.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/prototype/06/index.html" data-type="iframe" data-caption="jQuery Front Back 화면전환">
+                  <li>
+                    <img src="images/pt-06.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/prototype/07/index.html" data-type="iframe" data-caption="jQuery 푸터 패밀리사이트 커스텀">
+                  <li>
+                    <img src="images/pt-07.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/prototype/08/index.html" data-type="iframe" data-caption="jQuery 검색창 확장">
+                  <li>
+                    <img src="images/pt-08.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/prototype/09/index.html" data-type="iframe" data-caption="jQuery 웹사이트 FAQ">
+                  <li>
+                    <img src="images/pt-09.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/prototype/10/index.html" data-type="iframe" data-caption="jQuery 사운드 play 제어">
+                  <li>
+                    <img src="images/pt-10.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/prototype/11/index.html" data-type="iframe" data-caption="jQuery 반응형 모달 오픈창">
+                  <li>
+                    <img src="images/pt-11.PNG">
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+            <div class="uk-hidden@s uk-light">
+              <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+
+            <div class="uk-visible@s">
+              <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
+            </div>
+
+          </div>
+
+          <!-- <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul> -->
+
+        </div>
+      </div>
+      <div class="practical-items">
+        <h3>Tab-Content</h3>
+        <div class="practical-slider" uk-slider>
+
+          <div class="uk-position-relative">
+
+            <div class="uk-slider-container uk-light">
+              <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-small" uk-lightbox>
+                <a href="portfolio/practical-coding/tab-content/01/index.html" data-type="iframe" data-caption="햄버거 탭 사이드 바">
+                  <li>
+                    <img src="images/tab-01.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/tab-content/02/index.html" data-type="iframe" data-caption="슬라이더 탭 프로모션 배너">
+                  <li>
+                    <img src="images/tab-02.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/tab-content/03/index.html" data-type="iframe" data-caption="상하 슬라이더 탭 리뷰">
+                  <li>
+                    <img src="images/tab-03.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/tab-content/04/index.html" data-type="iframe" data-caption="풀스크린 탭 슬라이더">
+                  <li>
+                    <img src="images/tab-04.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/tab-content/05/index.html" data-type="iframe" data-caption="폰트어썸 탭 체크박스">
+                  <li>
+                    <img src="images/tab-05.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/tab-content/06/index.html" data-type="iframe" data-caption="탭 메뉴 콘텐츠 리뷰">
+                  <li>
+                    <img src="images/tab-06.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/tab-content/07/index.html" data-type="iframe" data-caption="jQuery 탭 메뉴 콘텐츠 서치박스">
+                  <li>
+                    <img src="images/tab-07.PNG">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/tab-content/08/index.html" data-type="iframe" data-caption="jQuery 변수 조건문 탭 별점주기">
+                  <li>
+                    <img src="images/tab-08.PNG">
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+            <div class="uk-hidden@s uk-light">
+              <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+
+            <div class="uk-visible@s">
+              <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
+            </div>
+
+          </div>
+
+          <!-- <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul> -->
+
+        </div>
+      </div>
+      <div class="practical-items">
+        <h3>Loading Keyframe</h3>
+        <div class="practical-slider" uk-slider>
+
+          <div class="uk-position-relative">
+
+            <div class="uk-slider-container uk-light">
+              <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-small" uk-lightbox>
+                <a href="portfolio/practical-coding/loading/01/index.html" data-type="iframe" data-caption="사각형 좌표 로딩">
+                  <li>
+                    <img src="images/kf-01.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/loading/02/index.html" data-type="iframe" data-caption="트리플 보더 래디어스 로딩">
+                  <li>
+                    <img src="images/kf-02.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/loading/03/index.html" data-type="iframe" data-caption="폰트아이콘 텍스트 쉐도우">
+                  <li>
+                    <img src="images/kf-03.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/loading/04/index.html" data-type="iframe" data-caption="항공 사이트 로딩">
+                  <li>
+                    <img src="images/kf-04.png">
+                  </li>
+                </a>
+                <a href="portfolio/practical-coding/loading/05/index.html" data-type="iframe" data-caption="원형 튜브 로딩">
+                  <li>
+                    <img src="images/kf-05.png">
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+            <div class="uk-hidden@s uk-light">
+              <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+
+            <div class="uk-visible@s">
+              <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
+            </div>
+
+          </div>
+
+          <!-- <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul> -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

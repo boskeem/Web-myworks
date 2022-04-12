@@ -1,0 +1,126 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+}
+
+/* Reset CSS */
+* { box-sizing: border-box; }
+a { text-decoration: none; color: #333; }
+
+/* Header */
+header {
+  background-color: #686de0;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  align-items: center;
+}
+nav {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo img {
+  filter: invert();
+}
+.gnb {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.gnb li a {
+  color: #fff;
+  margin: 10px;
+}
+.sns a {
+  color: #fff;
+  margin: 5px;
+}
+.gnb li a:hover,
+.sns a:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  /* Header */
+  header {
+    height: auto;
+  }
+  nav {
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+  }
+  .logo {
+    padding: 10px;
+  }
+  .gnb {
+    flex-direction: column;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .gnb li a {
+    display: block;
+    padding: 8px;
+    margin: 0;
+  }
+  .sns {
+    background-color: #7158e2;
+    text-align: center;
+    padding: 7px;
+  }
+  .sns a {
+    color: #fff;
+  }
+  .gnb,
+  .sns {
+    display: none;
+  } 
+
+  /* Trigger */
+  .trigger {
+    display: block;
+    width: 25px;
+    height: 15px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .trigger span {
+    background: #000;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+}

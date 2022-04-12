@@ -1,0 +1,120 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  font-family: 'Montserrat', sans-serif; 
+  margin: 0;
+  line-height: 1.6em;
+  color: #333;
+  font-size: 15px;
+  font-weight: 300;
+  background-color: #f4f4f4;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Section Card UI - Web hosting Service */
+.content {
+  width: 1100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.content h1 {
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-bottom: 50px;
+}
+.items {
+  text-align: center;
+}
+.item {
+  display: inline-block;
+  width: 340px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  padding: 50px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s;
+}
+.item:hover {
+  transform: scale(1.05);
+}
+.item::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 100%;
+  height: 44%;
+  left: 0;
+  bottom: 0;
+  transform: rotate(-10deg) scale(1.25);
+}
+.item:nth-child(1) {
+  background: linear-gradient(-45deg, #16a085 0%, #f4d03f 100%);
+}
+.item:nth-child(2) {
+  background: linear-gradient(-45deg, #fccb90 0%, #d57eeb 100%);
+}
+.item:nth-child(3) {
+  background: linear-gradient(-45deg, #6e45e2 0%, #88d3ce 100%);
+}
+.item > .fa {
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.item:nth-child(1) > .fa {
+  background: linear-gradient(45deg, #16a085 0%, #f4d03f 100%);
+}
+.item:nth-child(2) > .fa {
+  background: linear-gradient(45deg, #fccb90 0%, #d57eeb 100%);
+}
+.item:nth-child(3) > .fa {
+  background: linear-gradient(45deg, #6e45e2 0%, #88d3ce 100%);
+}
+.item h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.item h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.item ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.item li .fa {
+  margin-right: 5px;
+}
+.btn-order {
+  background-color: #fff;
+  display: inline-block;
+  width: 130px;
+  padding: 7px;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: 0.35s;
+  position: relative;
+}
+.btn-order:hover {
+  background-color: #000;
+  color: #fff;
+}

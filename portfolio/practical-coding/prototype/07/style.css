@@ -1,0 +1,131 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  background-color: #fff;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  height: 100px;
+  background-color: #74a7e0;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  line-height: 100px;
+}
+section {
+  height: 500px;
+  font-size: 2em;
+  text-align: center;
+  line-height: 500px;
+}
+section:nth-child(odd) {
+  background-color: #ddd;  /* 홀수만 */
+}
+
+/* Footer */
+footer {
+  background-color: #1c2336;
+  color: #999;
+  padding: 30px 0;
+}
+.footer-inner {
+  width: 1280px;
+  margin: auto;
+  /* overflow: hidden; */
+}
+.footer-inner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.copyright {
+  float: left;
+}
+.family {
+  float: right;
+  padding-top: 40px;
+}
+.policy a {
+  color: #fff;
+}
+.policy a:first-child {
+  color: #00d2d3;
+  font-weight: 500;
+}
+.policy a:hover {
+  text-decoration: underline;
+}
+footer em {
+  font-style: normal;
+  color: #777;
+  margin: 7px;
+  font-size: 10px;
+  display: inline-block;
+  transform: translateY(-2px);
+}
+.info p {
+  margin: 5px 0;
+}
+
+/* Family */
+.dropdown {
+  border: 1px solid #555;
+  width: 200px;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+.title::after {
+  content: '\f107';
+  font-family: fontawesome;
+  position: absolute;
+  right: 5px;
+}
+.title.active::after {
+  transform: rotate(180deg);
+}
+.sub-navi {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  display: none;
+}
+.sub-navi li a {
+  color: #fff;
+  display: block;
+  padding: 7px;
+  background-color: #555;
+  border-bottom: 1px solid #aaa;
+}
+.sub-navi li:last-child a  {
+  border: none;
+}
+.sub-navi li a:hover {
+  background-color: #333;
+}

@@ -1,0 +1,120 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Card UI */
+section {
+  height: 100vh;
+  /* position: relative; */
+  /* display: flex; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  width: 1100px;
+  /* margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 35px;
+  margin-bottom: 50px;
+}
+.heading::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 80px;
+  background-color: #ffb142;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.items {
+  /* text-align: center; */
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 15px;
+}
+.item {
+  /* width: 300px;
+  display: inline-block;
+  margin: 5px; */
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-radius: 5px;
+}
+.item h2 {
+  font-weight: normal;
+}
+.item p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+.item:hover .photo img {
+  transform: scale(1.1);
+}
+.photo {
+  overflow: hidden;
+  height: 220px;
+  border-radius: 5px;
+}
+.photo img {
+  height: 100%;
+  transition: 0.5s;
+}
+.user-info {
+  overflow: hidden;
+}
+.user-info span {
+  display: inline-block;
+  width: 49%;
+}
+.comment {
+  text-align: right;
+}
+.user img {
+  width: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.btn-explore {
+  background-color: #00cec9;
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  border-radius: 3px;
+  margin-top: 10px;
+}

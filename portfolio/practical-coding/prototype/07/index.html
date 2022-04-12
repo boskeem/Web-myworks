@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 푸터 패밀리사이트 커스텀</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+    <section>Section #01</section>
+    <section>Section #02</section>
+    <footer>
+      <div class="footer-inner">
+        <div class="copyright">
+          <div class="policy">
+            <a href="#none">개인정보처리방침</a><em>|</em><a href="#none">사이트맵</a>
+          </div>
+          <div class="info">
+            <p>
+              수원시 행복구 행복로 12층 (주)킴스주식회사<em>|</em>Tel. 031-123-4567, 4568<em>|</em>E-mail. keemscompany@abcd.com
+            </p>
+            <p>COPYRIGHT (C) KEEMS COMPANY. ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+        <div class="family">
+          <div class="dropdown">
+            <div class="title">Family Site</div>
+            <ul class="sub-navi">
+              <li><a href="#">사업본부</a></li>
+              <li><a href="#">킴스푸드</a></li>
+              <li><a href="#">킴스베이커리</a></li>
+              <li><a href="#">킴스스토어</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    $('.title').click(function(){
+      //$('.sub-navi').show()
+      //$('.sub-navi').fadeToggle()
+      //$('.sub-navi').slideDown()
+      $('.sub-navi').slideToggle()
+      $(this).toggleClass('active')
+    })
+    $('.sub-navi li').click(function(){
+      var link = $(this).text();
+      $(this).parent().slideUp()
+      $('.title').text(link)
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #777;
+  color: #fff;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  text-decoration: none;
+  font-size: 8em;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  position: relative;
+  transition: 0.3s;
+}
+.btn:before,
+.btn:after {
+  content: attr(data-text);
+  -webkit-text-stroke: 1px transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.btn:before {
+  color: #ff6b81;
+}
+.btn:after {
+  color: #7bed9f;
+}
+
+/* Hover Effect */
+.btn:hover {
+  color: #fff;
+}
+.btn:hover:before {
+  opacity: 1;
+  transform: translate(10px, -10px);
+}
+.btn:hover:after {
+  opacity: 1;
+  transform: translate(20px, -20px);
+}

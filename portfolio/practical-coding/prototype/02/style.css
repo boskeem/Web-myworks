@@ -1,0 +1,89 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  font-weight: 400;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+
+/* Layout */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section article {
+  width: 980px;
+}
+.heading {
+  text-align: center;
+}
+.heading span {
+  font-size: 24px;
+  color: #5758BB;
+}
+.heading h1 {
+  font-size: 36px;
+  margin-top: 30px;
+}
+.heading h1 em {
+  font-style: normal;
+  position: relative;
+}
+.heading h1 em::after {
+  position: absolute;
+  content: url(images/logo-kakao.png);
+  right: -30px;
+  top: -25px;
+}
+.content > div {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.title {
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.title::after {
+  content: '\f105';
+  font-family: fontawesome;
+  float: right;
+  margin-right: 5px;
+  margin-top: 2px;
+  transition: 0.3s;
+}
+.title.active::after {
+  transform: rotate(90deg);
+  color: #f8c8e7;
+}
+.title:hover,
+.title.active {
+  background-color: #833471;
+  color: #fff;
+}
+.desc {
+  padding: 15px;
+  display: none;
+}
+.desc.active {
+  display: block;
+}

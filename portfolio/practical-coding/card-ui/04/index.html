@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쇼핑몰 아이템 UI 디자인</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section>
+    <h1 class="heading">힐링 <b>푸드 페스티벌</b> 에피타이저 및 디저트 <span>오픈샵</span></h1>
+    <div class="items-inner">
+      <h2>2022 푸드 페스티벌 인기 TOP5</h2>
+      <div class="items">
+        <div class="item">
+          <div class="photo">
+            <a href="#none">
+              <img src="images/item-01.jpg">
+              <img src="images/item-01-hover.jpg">
+            </a>
+          </div>
+          <div class="detail">
+            <span class="price"><b>18<small>%</small></b>32,000원</span>
+            <span class="name">버섯 파스타 샐러드</span>
+            <span class="count">구매 30</span>
+            <span class="like"></span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="photo">
+            <a href="#none">
+              <img src="images/item-02.jpg">
+              <img src="images/item-02-hover.jpg">
+            </a>
+          </div>
+          <div class="detail">
+            <span class="price"><b>26<small>%</small></b>33,500원</span>
+            <span class="name">치킨 스윗포테이토 보울</span>
+            <span class="count">구매 20</span>
+            <span class="like"></span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="photo">
+            <a href="#none">
+              <img src="images/item-03.jpg">
+              <img src="images/item-03-hover.jpg">
+            </a>
+          </div>
+          <div class="detail">
+            <span class="price"><b>33<small>%</small></b>28,000원</span>
+            <span class="name">쿠키벨벳크림 케익</span>
+            <span class="count">구매 80</span>
+            <span class="like"></span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="photo">
+            <a href="#none">
+              <img src="images/item-04.jpg">
+              <img src="images/item-04-hover.jpg">
+            </a>
+          </div>
+          <div class="detail">
+            <span class="price"><b>15<small>%</small></b>20,500원</span>
+            <span class="name">프랑수아즈 크림 마카롱</span>
+            <span class="count">구매 70</span>
+            <span class="like"></span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="photo">
+            <a href="#none">
+              <img src="images/item-05.jpg">
+              <img src="images/item-05-hover.jpg">
+            </a>
+          </div>
+          <div class="detail">
+            <span class="price"><b>20<small>%</small></b>18,500원</span>
+            <span class="name">콜롬비아산 블랙커피</span>
+            <span class="count">구매 50</span>
+            <span class="like"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.like').click(function(){
+      $(this).toggleClass('active')
+    })
+  </script>
+
+</body>
+</html>

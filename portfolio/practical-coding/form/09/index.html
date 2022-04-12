@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 유효성 체크 로그인 폼</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="icon" href="images/logo-favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="login">
+    <img src="images/logo-favicon.png" alt="CodingWorks Logo">
+    <h1>KEEMS LAB Login</h1>
+    <form action="">
+      <div class="input-field">
+        <input type="email" id="userid" autocomplete="off" required><span>USER EMAIL</span>
+      </div>
+      <div class="input-field">
+        <input type="password" id="userpw" required maxlength="12" minlength="8"><span>PASSWORD</span>
+      </div>
+      <div class="button-field">
+        <input type="submit" value="Sign In" id="login-btn">
+      </div>
+      <div class="add-info">
+        <label>
+          <input type="checkbox" id="save-email"><em></em><span>Save your Email?</span>
+        </label>
+        <a href="#none">Forgot Password?</a>
+      </div>
+    </form>
+  </section>
+
+  <script>
+    // var userId = $('#userid');
+    // var userPw = $('#userpw');
+    // var loginBtn = $('#login-btn');
+
+    var  userId = $('#userid'),
+          userPw = $('#userpw'),
+          loginBtn = $('#login-btn');
+    
+    loginBtn.click(function(){
+      if(userId.val() == '') {
+        userId.next('span').addClass('warning');
+        setTimeout(function(){
+          userId.next('span').removeClass('warning')
+        }, 1500);
+      }
+      else if(userPw.val() == '') {
+        userPw.next('span').addClass('warning');
+        setTimeout(function(){
+          userPw.next('span').removeClass('warning')
+        }, 1500);
+      }
+      else {
+        실행구문
+      }
+    })
+
+  </script>
+
+</body>
+</html>

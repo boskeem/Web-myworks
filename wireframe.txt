@@ -1,0 +1,103 @@
+.container
+	header
+		.header-inner
+			.logo > a > img
+			.gnb > a(data-link="")*4
+	
+	section.welcome
+		.welcome-photo > img
+		.welcome-heading
+			h1(인사말+소개) > em#typing-job(퍼블리셔/디자이너)
+			a.btn(view my work *포트폴리오로 스크롤/기능정의서)
+	
+	section.about#view1
+		.about-inner
+			.about-content
+				.about-left(.ltr.wow)
+					.about-photo > img(내사진)
+				.about-right(.rtl.wow)
+					.about-me
+						h2(이름)
+						p(지원동기) > b(한줄어필 강조)
+						span > b(주제)*6(생년월일/나이/사는곳/취미/이메일/프리랜서여부-가능한)
+					a.btn(my resume)
+					
+	section.skill#view2
+		.skill-inner
+			.headline-share
+				h1
+				p
+			.skill-content
+				.skill-items
+					.skill-box(.utd.wow)*4
+						.skill-icon > img
+						h3
+						p > b
+					.skill-box(.dtu.wow)*4
+						.skill-icon > img
+						h3
+						p > b
+						
+	section.coding#view3
+		.coding-inner
+			.headline-share(코딩)
+				h1
+				p
+			.coding-content
+				.tab-inner
+					input[input type="radio" name="tabmenu" id="tab1"]*6
+					.tab-btn
+						label[for="tab1"]*6
+					.tab-grid
+						.tab-item.box1*6
+							.work
+								.item			
+
+	section.website
+	.website-inner
+	.headline-share
+		h1
+		p
+	.lists
+			b
+			h2
+			p.font-noto > q
+			p.font-noto.portfolio-info > span*5
+		.list.thum*3
+			.thum-photo
+			span.portfolio-title
+			 a.btn-view.pc
+			 a.btn-view.mobile
+				
+	section.graphic
+		.graphic-inner
+			.headline-share(그래픽)
+				h1
+				p
+			.graphic-content
+				.tab-inner-design
+					input[input type="radio" name="tabmenu" id="tabs1"]*6
+					.tab-btn-design
+						label[for="tabs1"]*6
+					.tab-grid-design
+						.tab-items.box1*6
+							.works
+								.items
+			
+	section.epilogue#view4
+		.epilogue-inner
+			.headline-share
+				h1
+				p
+			.epilogue-content
+				.epilogue-item
+					.epilogue-photo > img
+					.epilogue-text
+						h3
+						p
+						
+	
+	footer
+		.footer-inner
+			.footer-content
+				span (카피라이트)

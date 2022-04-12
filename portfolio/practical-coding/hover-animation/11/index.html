@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>마우스 호버 백그라운드 체인지</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <ul class="navi">
+      <li data-image="images/architecture-01.jpg"><a href="#none" data-text="ABOUT">ABOUT</a></li>
+      <li data-image="images/architecture-02.jpg"><a href="#none" data-text="PROJECTS">PROJECTS</a></li>
+      <li data-image="images/architecture-03.jpg"><a href="#none" data-text="SURVICE">SURVICE</a></li>
+      <li data-image="images/architecture-04.jpg"><a href="#none" data-text="AWARDS">AWARDS</a></li>
+    </ul>
+    <div class="photo"></div>
+  </div>
+
+  <script>
+    $('.navi li').mouseenter(function(){
+      var changeImage = $(this).attr('data-image')
+      $('.photo').css({
+        'background-image' : 'url('+ changeImage +')'
+      })
+    })
+    $('.navi li').mouseleave(function(){
+      $('.photo').css({
+        'background-image' : ''
+      })
+    })
+  </script>
+
+</body>
+</html>

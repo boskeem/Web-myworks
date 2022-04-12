@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 탭 메뉴 콘텐츠 서치박스</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="heading">
+      <h1>Most Effective<span>Online Learning</span>  Tips For All Learners</h1>
+      <input type="text" placeholder="What are you looking for?">
+    </div>
+    <div class="tab-inner">
+      <ul class="btn">
+        <li class="active" data-alt="tab1">Strategy</li>
+        <li data-alt="tab2">Pick</li>
+        <li data-alt="tab3">Taking</li>
+        <li data-alt="tab4">Review</li>
+        <li data-alt="tab5">Avoid</li>
+      </ul>
+      <div class="tabs">
+        <div class="active" id="tab1">
+          <h2>Use a Learning Strategy</h2>
+          <img src="images/platform-logo-01.png">
+          <p>
+            The first online learning tip is to use a learning strategy that works for you. What I mean by this is that there are four core methods for us to learn.
+            The first online learning tip is to use a learning strategy that works for you. What I mean by this is that there are four core methods for us to learn.
+            Knowing which type of learner you are most dominant in can help you devise strategies and techniques around your studying habits whenever possible. Of course, you can still use the other methods loosely or may have to rely on them more in certain circumstances.
+          </p>
+        </div>
+        <div id="tab2">
+          <h2>Pick the Best Time and Place</h2>
+          <img src="images/platform-logo-02.png">
+          <p>
+            This online learning tip does not only apply to online learning but offline/physical as well. Choosing when to learn and study is very important in terms of maximizing your energy and learning more efficiently. We all have different energy levels over the course of the day, and some of us prefer to do certain activities at certain points in the day.
+            Being able to strike a balance between your energy and alertness levels while also considering the time of day is crucial when it comes to learning and studying and even doing other things.
+          </p>
+        </div>
+        <div id="tab3">
+          <h2>Taking Good Notes</h2>
+          <img src="images/platform-logo-03.png">
+          <p>
+            Even if you’re not physically studying at school or in a classroom, note-taking is still an important part of learning and growing intellectually. How good your notes are will determine how useful studying them later will be. A sign of good note-taking is when the notes are written or seen in such a way that you know the sequence of information that was brought up revolving around them.
+            With that in mind, you want your notes to be as detailed as possible for you to be able to retain them. It’s also here where you can lean into the type of learner you are.
+          </p>
+        </div>
+        <div id="tab4">
+          <h2>Review and Simplify Often</h2>
+          <img src="images/platform-logo-04.png">
+          <p>
+            Reviewing notes and previous ideas will, of course, be very helpful for you. Consider these as prompts that you’re able to use to recall the rest of the information. But instead of waiting until big tests or some other key date, I’d suggest getting into the habit of spending a half-hour every day to review content or notes. By reviewing things constantly, you’re not overwhelmed with the amount of information that you’ve got to handle.
+            Another thing you can consider is to simplify the process as much as you possibly can. I find this to be super helpful as it gets me to ask the question.
+          </p>
+        </div>
+        <div id="tab5">
+          <h2>Avoid Distractions</h2>
+          <img src="images/platform-logo-05.png">
+          <p>
+            This is probably one of the most obvious but also important online learning tips because any distraction is a bad one when it comes to trying to learn or review something. Sometimes, distraction comes from outside sources that are beyond our control. However, there are also several other things that are internal that can be distracting.
+            These are things like our cell phones or having various tabs on your computer up while you’re reading or studying something else. We don’t often think about those as distractions, but they can and will pull us away from learning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.btn li').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+
+      var result = $(this).attr('data-alt')
+      $('.tabs div').removeClass('active')
+      $('#' + result).addClass('active')
+    })
+  </script>
+
+</body>
+</html>

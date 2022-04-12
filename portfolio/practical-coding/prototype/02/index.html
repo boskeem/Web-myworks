@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 어코디언 콘텐츠 슬라이드</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <section>
+    <article>
+      <div class="heading">
+        <span>You made it through another relationship milestone!</span>
+        <h1><em>KakaoTalk</em> Relationship <b>Milestones</b> That Are Worth</h1>
+      </div>
+      <div class="content">
+        <div class="accordion">
+          <div class="title active">From “Just Dating” to Exclusivity</div>
+          <div class="desc active">
+            In the store of life, it can be challenging to find the perfect fit, but once you do, it’s very fulfilling.
+            <br><br>
+            It’s at this point that you might decide to become exclusive and work on building your relationship. This relationship milestone is a great start, and worthy of recognition.
+          </div>
+          <div class="title" data-image="images/app-capture-02.png">Saying “I Love You!”</div>
+          <div class="desc">
+            Who says it first? This is a semi-scary relationship milestone because in order to tell your love interest that you love them, you’re gambling with your heart.
+            <br><br>
+            What if you utter those three little words and your love interest just stands there and replies, “That’s nice”? Ouch.
+          </div>
+          <div class="title" data-image="images/app-capture-03.png">Meeting Friends and Family</div>
+          <div class="desc">
+            This is a really critical relationship milestone. Receiving the Stamp of Approval from friends and family basically seals the deal.
+            <br><br>
+            Even though you may have fallen hard for your person, it always feels better if your family and friends think they are just as great as you think they are.
+          </div>
+          <div class="title" data-image="images/app-capture-04.png">Having Your First Fight</div>
+          <div class="desc">
+            It’s going to happen. No matter how in love you are, disturbances are going to take place.
+            <br><br>
+            As you become more at ease with each other, guards will drop, and the baggage that you’ve both been carrying will, at some point or another, spill out.
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/app-capture-01.png">
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <script>
+    $('.title').click(function(){
+      $(this).addClass('active')
+      $(this).siblings('.title').removeClass('active')
+      $(this).siblings('.desc').stop().slideUp()
+      $(this).next().stop().slideDown()
+
+      var dataimage = $(this).attr('data-image')
+      $('.image img').attr('src', dataimage)
+    })
+  </script>
+
+</body>
+</html>

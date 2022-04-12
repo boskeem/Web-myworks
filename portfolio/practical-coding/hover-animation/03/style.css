@@ -1,0 +1,64 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  line-height: 1.6em;
+  background-color: #3c6382;
+}
+
+/* Tooltip */
+.sns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid #fff;
+  width: 100%;
+  text-align: center; */
+}
+.sns a {
+  color: #fff;
+  font-size: 2em;
+  margin: 5px;
+  position: relative;
+}
+.sns a:before {
+  content: attr(data-text);
+  position: absolute;
+  background-color: #da7660;
+  /* width: 60px;
+  height: 35px; */
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 16px;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 35px;
+  border-radius: 2px;
+}
+.sns a:after {
+  content: '';
+  background-color: #da7660;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+/* Hover Function */
+.sns a:before,
+.sns a:after {
+  display: none;
+}
+.sns a:hover:before,
+.sns a:hover:after {
+  display: block;
+}

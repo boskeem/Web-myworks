@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KEEMS Travel</title>
+  <link rel="icon" href="images/logo-favicon.png">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="js/slick/slick-theme.css">
+  <link rel="stylesheet" href="js/slick/slick.css">
+  <script src="js/slick/slick.min.js"></script>
+  <!-- TypeIt -->
+  <script src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"></script>
+  <!-- Wow Scroll Reveal Animation -->
+  <script src="js/wow.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="custom.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="header-inner">
+        <div class="logo">
+          <a href="#"><img src="images/logo.png"></a>
+        </div>
+        <div class="gnb">
+          <a href="#feature1">About US</a>
+          <a href="#feature2">How to Book</a>
+          <a href="#feature3">Our Vision</a>
+          <a href="#feature4">FaQ</a>
+          <a href="#feature5">User Reviews</a>
+          <a href="#feature6">App Guides</a>
+          <a href="#feature7">News</a>
+        </div>
+      </div>
+      <div class="trigger"></div>
+    </header>
+    
+    <!-- Section : welcome -->
+    <section class="welcome">
+      <div class="slideshow">
+        <img src="images/slide-welcome-01.jpg">
+        <img src="images/slide-welcome-02.jpg">
+        <img src="images/slide-welcome-03.jpg">
+      </div>
+      <div class="welcome-heading">
+        <span>Easily find your perfect trip</span>
+        <h1>
+          includes transport booking services such as
+          <em id="typing"></em>
+        </h1>
+        <p>
+          KEEMS Travel is also a key player in the lifestyle segment offering reservations for a wide range of local attractions and activities as well as culinary directories.
+        </p>
+        <div class="welcome-btns">
+          <a href="#none" class="btn start">Get Started</a>
+          <a href="#none" class="btn guide">User Guide</a>
+        </div>
+      </div>
+      <div class="mouse">
+        <span class="wheele"></span>
+      </div>
+    </section>
+    
+    <!-- Section : ceo-access -->
+    <section class="ceo-access" id="feature1">
+      <div class="ceo-inner">
+        <div class="ceo-content">
+          <div class="ceo-left ltr wow">
+            <img src="images/quotation-mark.svg">
+            <h3>You deserve a break</h3>
+            <p>
+              Busy lives and packed schedules call for trips that are headache free. Our goal is to provide stress-free travel every time you and your family book with us so that you can spend less time worrying and more time.
+            </p>
+            <span>bonies - KEEMS Travel CEO</span>
+          </div>
+          <div class="ceo-right rtl wow">
+            <div class="ceo-msg">
+              <h3>app downloads worldwide<big>40mio+</big></h3>
+              <p>
+                making it the most popular travel and lifestyle booking application in the Southeast Asian region.
+              </p>
+            </div>
+            <div class="ceo-photo">
+              <img src="images/icon-face-ceo.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="access-inner">
+        <div class="access-content">
+          <div class="access-left ltr wow">
+            <h2>The most popular<br> travel and lifestyle<br> booking application</h2>
+            <p>
+              Access and change your itinerary on-the-go
+              Free cancellation on select hotels
+              Get real-time trip updates (Android and iOS)
+            </p>
+            <div class="btn-download">
+              <a href="#none"><img src="images/btn-appstore.png"></a>
+              <a href="#none"><img src="images/btn-playstore.png"></a>
+            </div>
+          </div>
+          <div class="access-right rtl wow">
+            <img src="images/access-mockup.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section : banner -->
+    <section class="banner">
+      <div class="banner-inner">
+        <div class="banner-content">
+          <input type="radio" name="tabmenu" id="tab1" checked>
+          <input type="radio" name="tabmenu" id="tab2">
+          <input type="radio" name="tabmenu" id="tab3">
+          <div class="tab-btn">
+            <label for="tab1">
+              <em><img src="images/banner-icon-01.png"></em>
+              <span>Vacation Packages Under $400</span>
+            </label>
+            <label for="tab2">
+              <em><img src="images/banner-icon-02.png"></em>
+              <span>Get More Bang for Less Buck.</span>
+            </label>
+            <label for="tab3">
+              <em><img src="images/banner-icon-03.png"></em>
+              <span>Discover Airfare Under $200</span>
+            </label>
+          </div>
+          <div class="tabs">
+            <div class="tab tab1">
+              <h2>Southeast Asia’s Lifestyle Superapp</h2>
+              <p>
+                We know there are places you wish to go, landmarks you long to see, people you hope to visit.
+              </p>
+            </div>
+            <div class="tab tab2">
+              <h2>Power to Enrich People’s Lives</h2>
+              <p>
+                Think of nothing beyond having a great time, making a splash in the pool and soaking up sun on the beach. 
+              </p>
+            </div>
+            <div class="tab tab3">
+              <h2>Place for Growth</h2>
+              <p>
+                Getting out of town can do wonders. You can temporarily escape your daily concerns and gain a fresh perspective. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section : feature -->
+    <section class="feature" id="feature2">
+      <div class="feature-inner">
+        <div class="headline-share">
+          <h1>How to Book</h1>
+          <p>Complete your booking in 5 minutes or less!</p>
+        </div>
+        <div class="feature-content">
+          <div class="feature-mockup ltr wow">
+            <img src="images/feature-mockup-01.png">
+          </div>
+          <div class="feature-about rtl wow">
+            <img src="images/icon-num-01.png">
+            <h2>Access a world of travelers</h2>
+            <p>
+              From long-range planners to last-minute bookers, bring travelers to your door from around the world.
+            </p>
+          </div>
+        </div>
+        <div class="feature-content flex-order">
+          <div class="feature-about ltr wow">
+            <img src="images/icon-num-02.png">
+            <h2>Attract your ideal guests</h2>
+            <p>
+              Book your ideal guests—travelers who delight in what you provide and want to return again and again.
+            </p>
+          </div>
+          <div class="feature-mockup rtl wow">
+            <img src="images/feature-mockup-02.png">
+          </div>
+        </div>
+        <div class="feature-content">
+          <div class="feature-mockup ltr wow">
+            <img src="images/feature-mockup-03.png">
+          </div>
+          <div class="feature-about rtl wow">
+            <img src="images/icon-num-03.png">
+            <h2>Grow your business</h2>
+            <p>
+              Make decisions based on real-time data, be more competitive & help increase visibility and bookings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section : vision -->
+    <section class="vision" id="feature3">
+      <div class="vision-inner">
+        <div class="vision-content">
+          <div class="vision-item-desc">
+            <div class="vision-item-headline">
+              <h3>Broader Exposure</h3>
+              <hr>
+              <p>
+                Expand your business by reaching our customers in APAC region and beyond.
+              </p>
+            </div>
+          </div>
+          <div class="vision-item-photo">
+            <img src="images/vision-01.jpg">
+          </div>
+          <div class="vision-item-desc">
+            <div class="vision-item-headline">
+              <h3>Reliable Partner Support</h3>
+              <hr>
+              <p>
+                Solve your business problems and marketing needs from our dedicated account managers.
+              </p>
+            </div>
+          </div>
+          <div class="vision-item-photo">
+            <img src="images/vision-02.jpg">
+          </div>
+          <div class="vision-item-desc">
+            <div class="vision-item-headline">
+              <h3>Free Registration</h3>
+              <hr>
+              <p>
+                Start growing your business with us, cost-free.
+              </p>
+            </div>
+          </div>
+          <div class="vision-item-photo">
+            <img src="images/vision-03.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section : faq -->
+    <section class="faq" id="feature4">
+      <div class="faq-inner">
+        <div class="headline-share">
+          <h1>Frequently Asked Questions</h1>
+          <p>Your Virtual Agent is a bot who can help with your plans 24/7.</p>
+        </div>
+        <div class="faq-content">
+          <div class="faq-accordion ltr wow">
+            <div class="faq-item active">
+              <div class="faq-title">Book a flight using an airline credit</div>
+              <div class="faq-desc">
+                If you’ve had to cancel or change your non-refundable flight, most airlines will offer you a credit instead of a refund. Here’s what you should know.
+                <br>
+                Flight canceled due to COVID-19? If so, the airlines are setting the policies for how you can redeem your airline credit. Many airlines are waiving change fees when it comes to rebooking. <br>
+                Have a credit on a low-cost airline? To redeem an airline credit from a low-cost airline, such as Frontier or Spirit, contact the airline directly.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-title">Refund timelines, policies & processes</div>
+              <div class="faq-desc">
+                Due to COVID-19, most refunds for flights, including when they’re part of a package, are issued within 12 weeks. Some refunds could take a bit longer, depending on the airline.
+                <br>
+                Refunds for hotel, car, or activity, including when they’re part of a package, are processed within our normal timeframe, 24 hours from the cancellation request. Keep in mind, your bank or payment service determines when the funds become available in your account.
+                <br>
+                In other circumstances not impacted by COVID-19, here’s what you should know about refund timelines:
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-title">How to Check In Online</div>
+              <div class="faq-desc">
+                Online check-in allows you to check in for your flights online prior to your arrival at the airport. You can check in online via Traveloka App or website by following these simple steps:
+                <br>
+                1. Log in to your Traveloka account. <br>
+                2. Open your e-ticket through My Booking. <br>
+                3. Tap Online Check-in. <br>
+                4. Once you have agreed to the Online Check-in policy, fill in your check-in details. Then, tap the Check In button. <br>
+                5. When check-in is successful, you will be able to see the boarding pass through your e-ticket. It will also be sent to your email.
+                <br>
+                Please note that you need to bring a printed boarding pass to the departure gate. If you can’t print it yourself, you can have your boarding pass printed at the check-in counter.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-title">Payment Confirmation and Verification</div>
+              <div class="faq-desc">
+                Your payment is confirmed when you receive your e-ticket/voucher in your email. 
+                <br>
+                If you have not received the e-ticket/voucher within 60 minutes after completing your payment, it is possible that you might have entered the wrong one-time password (OTP) (if you paid by credit card), the wrong account number, or the wrong amount (if you paid by bank transfer).
+                <br>
+                In any case, please upload your payment proof so our team can conduct further checking. Here’s how you can upload your payment proof on Traveloka desktop website.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-title">How to Check My Refund Status</div>
+              <div class="faq-desc">
+                To check your refund status on the Traveloka website, follow these steps:
+                <br>
+                1. Log in to your Traveloka account. <br>
+                2. Click on your account on the top right hand corner, and click My Booking. <br>
+                3. Choose the booking whose refund status you want to check, then click Details. <br>
+                4. In the Booking Details section, click Request Refund. <br>
+                5. Under Refund History, click See Details and you will be able to see your refund status.
+              </div>
+            </div>
+          </div>
+          <div class="awards-content rtl wow">
+            <div class="award-image">
+              <img src="images/faq-01.png">
+            </div>
+            <h2>OOPS, YOU LOOK LOST.</h2>
+            <p>
+              Check out our latest deals or if you need more help, head to Customer Support for FAQs and our contact info.
+            </p>
+            <a href="#none" class="btn-awards">view the more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section : review -->
+    <section class="review" id="feature5">
+      <div class="review-inner">
+        <div class="headline-share">
+          <h1>Verified User Reviews</h1>
+          <p>startup mate ceo review</p>
+        </div>
+        <div class="review-content">
+          <h1 class="slogan">Exclusively for KEEMS Travel members</h1>
+          <div class="review-slider">
+            <div>
+              <p>
+                Our suite at Trump International was huge! The marble bathroom was beautiful. Two bathrooms with showers and a huge sectional couch in sitting area. Only thing I would suggest is to have Terry robes for guests. Also, I was surprised that it only had one restaurant although, the food was superb!
+              </p>
+              <p>
+                <span>Nanci</span>
+                confidence coach
+              </p>
+            </div>
+            <div>
+              <p>
+                The property was nice but I didn’t get to experience the pool. Tried going twice and both times it was closed. First time was because of after hours and next time it was so to maintenance.
+                Booking our trip through Expedia was easy. The property at Trump Towers, Las Vegas beautiful!!! We stayed in a corner suite which has lots of space and a full kitchen with beautiful views of the city!
+              </p>
+              <p>
+                <span>Francene</span>
+                speaker and the author
+              </p>
+            </div>
+            <div>
+              <p>
+                Overall, we were very pleased with our stay. The pool was wonderful and the staff there was very friendly and helpful. The food was delicious, but the staff there was not so friendly. The suite we had was amazing and we will definitely be back. Excellent experience!
+              </p>
+              <p>
+                <span>Stephen</span>
+                Advisor
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section : focus -->
+    <section class="focus" id="feature6">
+      <div class="focus-inner">
+        <div class="headline-share">
+          <h1>Explore the benefits</h1>
+        </div>
+        <div class="focus-content">
+          <div class="focus-item utd wow">
+            <img src="images/focus-icon-01.png">
+            <h3>Find your perfect trip</h3>
+            <i class="xi-checkbox-blank"></i>
+            <p>
+              Plan a trip for the whole family friendly filters, our tools make it easy.
+            </p>
+          </div>
+          <div class="focus-item utd wow" data-wow-delay="0.25s">
+            <img src="images/focus-icon-02.png">
+            <h3>Book with flexibility</h3>
+            <i class="xi-checkbox-blank"></i>
+            <p>
+              With free cancellation on most hotels, you can book with peace of mind.
+            </p>
+          </div>
+          <div class="focus-item utd wow" data-wow-delay="0.5s">
+            <img src="images/focus-icon-03.png">
+            <h3>We've got your back</h3>
+            <i class="xi-checkbox-blank"></i>
+            <p>
+              We offer 24/7 support on social and through virtual agents online site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section : guide -->
+    <section class="guide">
+      <div class="guide-inner">
+        <div class="guide-content">
+          <div class="guide-slider ltr wow">
+            <div class="slider-mockup">
+              <img class="round-mockup" src="images/slder-mockup.png">
+              <div class="mockup-slider">
+                <img src="images/app-screen-01.png">
+                <img src="images/app-screen-02.png">
+                <img src="images/app-screen-03.png">
+                <img src="images/app-screen-04.png">
+                <img src="images/app-screen-05.png">
+                <img src="images/app-screen-06.png">
+              </div>
+            </div>
+          </div>
+          <div class="guide-video rtl wow">
+            <h1>
+              we collect<br>
+              from third parties<br>
+              <span>your personal data</span>
+            </h1>
+            <h2 class="video-headline"><img src="images/icon-youtube.png"> KEEMS Travel app guides video</h2>
+            <div class="video-frame">
+              <img src="images/user-guide.jpg">
+              <i class="fa fa-play-circle open-modal"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section : news -->
+    <section class="news" id="feature7">
+      <div class="news-inner">
+        <div class="headline-share">
+          <h1>Latest News</h1>
+        </div>
+        <div class="news-content">
+          <div class="news-left ltr wow">
+            <div class="news-big" onclick="location.href='#none'">
+              <img src="images/news-thum-big.jpg">
+              <div class="news-headline">
+                <h2>AXES by KEEMS Travel</h2>
+                <p>
+                  Manage your business and reach millions of customers much faster with the AXES system.
+                  <small class="date">Dec 24, 2020</small>
+                </p>
+                <a href="#none" class="btn-view">Learn AXES Features</a>
+              </div>
+            </div>
+          </div>
+          <div class="news-right rtl wow">
+            <div class="news-items">
+              <div class="news-thum" onclick="location.href='#none'">
+                <div class="news-photo">
+                  <img src="images/news-thum-small-01.jpg">
+                  <span class="badge new">new issue</span>
+                </div>
+                <p>
+                  Submit Your Products 4x Faster AXES system
+                  <small class="date">Dec 11, 2020</small>
+                </p>
+              </div>
+              <div class="news-thum" onclick="location.href='#none'">
+                <div class="news-photo">
+                  <img src="images/news-thum-small-02.jpg">
+                  <span class="badge hot">hot issue</span>
+                </div>
+                <p>
+                  Manage Bookings and Staff More Optimally
+                  <small class="date">Oct 21, 2020</small>
+                </p>
+              </div>
+            </div>
+            <div class="news-items">
+              <div class="news-thum" onclick="location.href='#none'">
+                <div class="news-photo">
+                  <img src="images/news-thum-small-03.jpg">
+                  <span class="badge new">new issue</span>
+                </div>
+                <p>
+                  Achieve Up to 5x Sales Increase marketing outreach
+                  <small class="date">Nov 12, 2020</small>
+                </p>
+              </div>
+              <div class="news-thum">
+                <div class="news-photo" onclick="location.href='#none'">
+                  <img src="images/news-thum-small-04.jpg">
+                  <span class="badge hot">hot issue</span>
+                </div>
+                <p>
+                  A Trustworthy Platform for Various Business
+                  <small class="date">Oct 16, 2020</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#none" class="btn-readmore">read more new</a>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="images/logo.png">
+          </div>
+          <div class="copyright">
+            <div class="policy-sns">
+              <div class="policy">
+                <span>
+                  <a href="#none">Privacy Statement</a> <em>|</em>
+                  <a href="#none">Terms of Use</a>
+                </span>
+                <span>
+                  Copyright © 2022 KEEMS Travel. All Rights Reserved.
+                </span>
+              </div>
+              <div class="sns">
+                <a href="#none"><i class="xi-facebook"></i></a>
+                <a href="#none"><i class="xi-instagram"></i></a>
+                <a href="#none"><i class="xi-kakaostory"></i></a>
+                <a href="#none"><i class="xi-naver"></i></a>
+                <a href="#none"><i class="xi-youtube-play"></i></a>
+              </div>
+            </div>
+            <div class="address">
+              <span>
+                KEEMS Travel | CEO : keems | Business Number : 123-5-67890 Check business information | Personal Information Protection Officer : keems
+              </span>
+              <span>
+                Address: 17th floor, Keems Building, 27 Cherry Blossom-ro, Seoul ㅣ Email: info@keemstravel.com
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- Go to top -->
+  <a class="btn-top" href="#"><i class="xi-angle-up-thin"></i></a>
+  
+  <!-- Video Modal -->
+  <div class="video-modal">
+    <i class="xi-close-thin close-modal"></i>
+    <div class="video-content">
+      <iframe  src="https://www.youtube.com/embed/bMMBM6g7oTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- TypeIt - Welcome -->
+  <script>
+    new TypeIt("#typing", {
+      strings: ["flight tickets", "airport transfer", "car rental"],
+      speed: 100,
+      waitUntilVisible: true,
+      breakLines: false,
+      loop: true,
+    }).go();
+  </script>
+  
+</body>
+</html>

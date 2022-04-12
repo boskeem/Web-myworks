@@ -1,0 +1,80 @@
+/* Web Fonts : Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #dfe6e9;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Navigation */
+.gnb {
+  background-color: #fff;
+  padding: 20px 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+}
+.gnb a {
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  position: relative;
+}
+.gnb .left::before,
+.gnb .right::before,
+.gnb .center::before,
+.gnb .none::before,
+.gnb .move::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+.gnb .left:hover::before,
+.gnb .right:hover::before,
+.gnb .center:hover::before {
+  width: 100%;
+}
+.gnb .left::before {
+  background-color: #e17055;
+}
+.gnb .right::before {
+  background-color: #6c5ce7;
+  right: 0;
+}
+.gnb .center::before {
+  background-color: #00b894;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gnb .none::before {
+  background-color: #0984e3;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gnb .none:hover::before {
+  width: 0;
+}
+.gnb .move::before {
+  background: #e84393;
+  height: 4px;
+  width: 4px;
+  left: 0;
+}
+.gnb .move:hover::before {
+  left: calc(100% - 4px);
+}

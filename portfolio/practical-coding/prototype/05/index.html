@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The World's Ocean</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="video-frame">
+      <video src="images/video-sea.mp4" autoplay muted loop poster="images/placeholder-sea.PNG"></video>
+    </div>
+    <div class="logo">
+      <img src="images/logo.png">
+    </div>
+    <div class="heading">
+      <h1><span>Flowtime</span>A Pomodoro</h1>
+      <p>
+          If you want to achieve professional and personal success, you need to get in the habit of setting short term weekly goals. These goals are very powerful in reminding you of the direction you want to take in your life. But despite its amazing effect on your progress, it still poses some drawbacks goals below.
+      </p>
+      <a class="btn-now" href="#none">Apply Now</a>
+      <a class="btn-more" href="#none">View More</a>
+    </div>
+    <div class="anniversary">
+      <em>Anniversary</em><span>20</span>
+    </div>
+    <div class="trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="modal-gnb">
+      <div class="gnb">
+        <a href="#none">FOCUS</a>
+        <a href="#none">MOTIVATED</a>
+        <a href="#none">LEARNING</a>
+        <a href="#none">LIFE BALANCE</a>
+        <a href="#none">RELATIONSHIPS</a>
+      </div>
+    </div>
+  </div>
+
+  <audio id="myAudio" src="images/bgm.mp3" autoplay loop></audio>
+
+  <script>
+    // Trigger
+    $('.trigger').click(function(){
+      $(this).toggleClass('active')
+      $('.modal-gnb').fadeToggle()
+
+
+    // Audio Controls
+    var bgm = document.getElementById('myAudio')
+    bgm.volume = 0.2
+  })
+  </script>
+
+</body>
+</html>

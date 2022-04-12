@@ -1,0 +1,61 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6em;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Table : Member */
+.member {
+  width: 900px;
+  background-color: #fff;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.member caption {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.member tr {
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+.member tr:last-child {
+  border: none;
+}
+/* .member tr:hover {
+  background-color: #eee;
+} */
+.member tr:nth-child(odd) {
+  background-color: #eee;
+}
+.member th,
+.member td {
+  padding: 12px;
+  text-align: center;
+}
+.member tr th {
+  background-color: #218c74;
+  color: #fff;
+}
+.member tr th:first-child {
+  border-radius: 5px 0 0 0;
+}
+.member tr th:last-child {
+  border-radius: 0 5px 0 0;
+}
+.member tr td:last-child {
+  color: #34ace0;
+}

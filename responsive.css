@@ -1,0 +1,165 @@
+@media (max-width: 768px) {
+  /* Common CSS */
+  section {
+    padding: 50px 20px;
+  }
+  /* Header */
+  header {
+    /* display: none; */
+  }
+  .header-inner {
+    width: 100%;
+  }
+  .gnb {
+    background-color: #fff;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: -270px;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    padding: 0 30px;
+    padding-top: 100px;
+  }
+  .gnb.active {
+    right: 0;
+  }
+  .gnb a {
+    display: block;
+    width: 100%;
+    color: #000;
+    text-align: right;
+    font-size: 22px;
+  }
+
+  /* Trigger */
+  .trigger {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
+  .trigger span {
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: 0.5s;
+  }
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  /* section : Welcome */
+  section.welcome {
+    /* display: none; */
+    background: #f8f2e4;
+  }
+  .welcome-photo::before {
+    display: none;
+  }
+  .welcome-heading {
+    width: 90%;
+  }
+  .welcome-heading h1 {
+    font-size: 26px;
+    color: #333;
+  }
+
+  /* section : About */
+  section.about {
+    /* display: none; */
+  }
+  .about-inner {
+    width: 100%;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .about-photo {
+    width: 100%;
+  }
+  .about-me {
+    padding-top: 20px;
+  }
+  .about-me p {
+    width: 100%;
+  }
+
+  /* section : Skill */
+  section.skill {
+    /* display: none; */
+  }
+  .skill-inner {
+    width: 100%;
+  }
+  .skill-box {
+    width: 100%;
+  }
+
+  /* section : Portfolio */
+  section.portfolio {
+    /* display: none; */
+  }
+  .portfolio-inner {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* section : Epilogue */
+  section.epilogue {
+    /* display: none; */
+  }
+  .epilogue-inner {
+    width: 100%;
+  }
+  .epilogue-photo {
+    width: 100%;
+  }
+  .epilogue-text p {
+    width: 100%;
+  }
+
+  /* ▦▦ Slick Custom CSS ▦▦ */
+  /* arrow */
+  .slick-prev.slick-arrow,
+  .slick-next.slick-arrow {
+    display: none !important;
+  }
+  .slider .slick-prev:before,
+  .slider .slick-next:before {
+    display: none;
+  }
+
+  /* Footer */
+  footer {
+    /* display: none; */
+  }
+  .footer-inner {
+    width: 100%;
+    font-size: 10px;
+  }
+}

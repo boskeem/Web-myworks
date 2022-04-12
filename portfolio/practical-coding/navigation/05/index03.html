@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3타입 상단 네비게이션</title>
+  <style>
+  /* Google Web Fonts CDN */
+  @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    color: #222;
+    background-color: #eee;
+  }
+  a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  /* Header Navigation */
+  header {
+    background-color: #fff;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.15);
+  }
+  nav {
+    width: 1100px;
+    margin: auto;
+    overflow: hidden;
+  }
+  nav > div {
+
+    height: 70px;
+    padding-top: 25px;
+  }
+  .logo {
+    padding-top: 18px;
+    margin-right: 15px;
+    float: right;
+  }
+  .gnb {
+    float: left;
+  }
+  .gnb a {
+    margin: 10px;
+  }
+  .lnb {
+    float: left;
+  }
+  .lnb a{
+    background-color: #786fa6;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 3px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="gnb">
+          <a href="#none">강의목록</a>
+          <a href="#none">로드맵</a>
+          <a href="#none">강의신청</a>
+          <a href="#none">퍼블리싱</a>
+          <a href="#none">스토리</a>
+          <a href="#none">커뮤니티</a>
+        </div>
+        <div class="lnb">
+          <a href="#none">로그인</a>
+        </div>
+        <div class="logo">
+          <a href="#none"><img src="images/logo.png"></a>
+        </div>
+      </nav>
+    </header>
+  </div>
+</body>
+</html>

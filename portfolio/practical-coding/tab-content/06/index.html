@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>탭 메뉴 콘텐츠- 스타일 01(with JQUERY)</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="testimonial-section">
+    <h1>What Is a <span>Daily Schedule</span> and Why it's Important</h1>
+    <div class="testimonial-pic">
+      <img class="active" src="images/face-01.jpg" data-alt="tab1">
+      <img src="images/face-02.jpg" data-alt="tab2">
+      <img src="images/face-03.jpg" data-alt="tab3">
+      <img src="images/face-04.jpg" data-alt="tab4">
+    </div>
+    <div class="testimonial">
+      <div class="content active" id="tab1">
+        <p>
+          What do you want? Is it an income level? Or do you want a job in a certain company, a business in a certain industry, or to be able to run at a certain speed? I hope reading these 7 benefits of realistic goal-setting has made you realize why it is important to set realistic goals.
+        </p>
+        <p>Awilda, Speaker</p>
+      </div>
+      <div class="content" id="tab2">
+        <p>
+          Ivy Lee is a name that CEOs, entrepreneurs, and managers should be familiar with. Back in 1918, he walked into the office of Charles M. Schwab, the president of the Bethlehem Steel Corporation, and shared with him a technique that Schwab later said was the more profitable advice he had ever received.
+        </p>
+        <p>Amy, management</p>
+      </div>
+      <div class="content" id="tab3">
+        <p>
+          This was the first goal-setting technique I was introduced to as a young entrepreneur. It actually originated from a management paper by George Doran, former Director of Corporate Planning for Washington Water Power Company, back in 1981.
+        </p>
+        <p>Adrian, Developer</p>
+      </div>
+      <div class="content" id="tab4">
+        <p>
+          The key to this technique is setting goals that are within reach, that are specific, and can be measured. For example, you have to hand out flyers. Your goal should not be “to hand out 1000 flyers in two hours.” The reason is that you cannot control if people will take the flyers. 
+        </p>
+        <p>Chris, consultant</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.testimonial-pic img').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+      
+      $('.testimonial .content').fadeOut()
+      $('#'+ $(this).attr('data-alt')).fadeIn()
+
+      // #tab1 == $(this).attr('data-alt')
+    })
+  </script>
+  
+</body>
+</html>

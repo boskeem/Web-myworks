@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website UI Publishing</title>
+  <!-- UIkit CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+  <!-- XEION CDN -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <style>
+    /* Google Web Font */
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+    /* Google Web Fonts CDN */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+    /* Reset CSS */
+    * {
+      box-sizing: border-box;
+      font-family: 'Noto Sans KR', sans-serif !important;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    button,
+    input {
+      outline: none;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      line-height: 1.5em;
+      margin-top: 0;
+      font-weight: normal;
+    }
+
+    /* Default CSS */
+    body {
+      font-weight: 300;
+    }
+    .uk-link,
+    a {
+      color: #333;
+    }
+    .uk-link:hover,
+    a:hover {
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Webpage Publishing */
+    .website {
+      background-color: #f8f8f8;
+    }
+    .website .content {
+      /* width: 1200px; */
+      margin: auto;
+    }
+    .website-header {
+      background-color: #fff;
+    }
+    .website-header h1 {
+      text-align: center;
+      color: #333;
+      font-size: 2em;
+      font-weight: 500;
+      padding: 20px 0;
+      width: 1200px;
+      margin: auto;
+      font-family: 'Montserrat', sans-serif !important;
+    }
+    .website-slider {
+      padding: 30px;
+    }
+    .website-slider .uk-slider-items .uk-panel img {
+      border-radius: 25px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      width: 1000px;
+      height: 500px;
+    }
+    .website-slider .item-info {
+      width: 500px;
+      background-color: rgba(34, 34, 34, 0.892);
+      color: #fff;
+      padding: 30px;
+    }
+    .website-slider .item-info ul {
+      list-style: none;
+      padding: 0;
+      line-height: 1.8em;
+      pointer-events: none;
+    }
+    .website-slider .item-info li:first-child {
+      background-color: #9c88ff;
+      display: inline-block;
+      padding: 0 5px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .website-slider .item-info li span {
+      margin-right: 10px;
+      font-weight: 500;
+    }
+    .website-slider .item-btn {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 50px;
+    }
+    .website-slider .item-btn a {
+      border: 1px solid #5758BB;
+      width: 150px;
+      display: inline-block;
+      height: 40px;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      text-decoration: none;
+    }
+    .website-slider .item-btn a:hover {
+      background-color: #5758BB;
+    }
+
+    @media (max-width: 768px) {
+      .website-header h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 1.8em;
+      }
+    }
+
+    /* UIKit Custom CSS - 이전 다음 버튼 */
+    .website-slider .uk-position-small {
+      border: 1px solid #ddd;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      padding-top: 12px;
+    }
+    .website-slider .uk-position-small svg {
+      color: #000;
+      width: 8px;
+    }
+    .website-slider .uk-slider-nav {
+      margin-top: 50px;
+    }
+
+    /* UIKit Custom CSS - 라이트박스 */
+    .portfolio-result .uk-lightbox .uk-lightbox-iframe {
+      /* border: 10px solid red; */
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+    }
+    .portfolio-result .uk-lightbox .uk-lightbox-button {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      opacity: 1;
+    }
+    .portfolio-result .uk-lightbox .uk-lightbox-toolbar {
+      background-color: transparent;
+    }
+    .portfolio-result .uk-lightbox .uk-lightbox-toolbar-icon {
+      background-color: #9c88ff;
+      border-radius: 50%;
+      padding: 15px;
+      margin-right: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+      transition: 0.35s;
+    }
+    .portfolio-result .uk-lightbox .uk-lightbox-toolbar-icon:hover {
+      transform: scale(1.1);
+    }
+    .portfolio-result .uk-lightbox .uk-transition-slide-top {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="portfolio-result">
+
+  <div class="container">
+    <section class="website">
+      <div class="website-header">
+        <h1>WEBSITE UI DESIGN & PUBLISHING</h1>
+      </div>
+      <div class="content">
+        <div class="website-slider uk-position-relative uk-dark" tabindex="-1" uk-slider="center: false">
+
+          <ul class="uk-slider-items uk-child-width-1-2@l uk-child-width-1-2@m uk-grid">
+            <li>
+              <div class="uk-panel">
+                <img src="images/webpage01.PNG">
+                <div class="item-info uk-position-center-right uk-panel">
+                  <ul>
+                    <li>전체 웹사이트 퍼블리싱 #01</li>
+                    <li><span>작업기간</span>14일</li>
+                    <li><span>작업범위</span>포토샵 UI디자인 및 퍼블리싱</li>
+                    <li><span>제작방식</span>HTML + CSS + JQUERY</li>
+                    <li><span>작업참여</span>100%</li>
+                    <li><span>참고사항</span>모든 퍼블리싱 하드코딩으로 제작</li>
+                  </ul>
+                  <div class="item-btn" uk-lightbox>
+                    <a href="portfolio/web.mobile/01/index.html" data-type="iframe">PC</a>
+                    <a href="html/mobile-portfolio-01.html" data-type="iframe">Mobile</a>
+                    <a href="portfolio/web.mobile/01/wireframe.pdf" data-type="iframe">기능정의서</a>
+                  </div>
+                </div> 
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="images/webpage02.PNG">
+                <div class="item-info uk-position-center-right uk-panel">
+                  <ul>
+                    <li>전체 웹사이트 퍼블리싱 #02</li>
+                    <li><span>작업기간</span>14일</li>
+                    <li><span>작업범위</span>포토샵 UI디자인 및 퍼블리싱</li>
+                    <li><span>제작방식</span>HTML + CSS + JQUERY</li>
+                    <li><span>작업참여</span>100%</li>
+                    <li><span>참고사항</span>모든 퍼블리싱 하드코딩으로 제작</li>
+                  </ul>
+                  <div class="item-btn" uk-lightbox>
+                    <a href="portfolio/web.mobile/02/index.html" data-type="iframe">PC</a>
+                    <a href="html/mobile-portfolio-02.html" data-type="iframe">Mobile</a>
+                    <a href="portfolio/web.mobile/02/wireframe.pdf" data-type="iframe">기능정의서</a>
+                  </div>
+                </div> 
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="images/webpage03.png">
+                <div class="item-info uk-position-center-right uk-panel">
+                  <ul>
+                    <li>전체 웹사이트 퍼블리싱 #03</li>
+                    <li><span>작업기간</span>14일</li>
+                    <li><span>작업범위</span>포토샵 UI디자인 및 퍼블리싱</li>
+                    <li><span>제작방식</span>HTML + CSS + JQUERY</li>
+                    <li><span>작업참여</span>100%</li>
+                    <li><span>참고사항</span>모든 퍼블리싱 하드코딩으로 제작</li>
+                  </ul>
+                  <div class="item-btn" uk-lightbox>
+                    <a href="portfolio/web.mobile/03/index.html" data-type="iframe">PC</a>
+                    <a href="html/mobile-portfolio-03.html" data-type="iframe">Mobile</a>
+                    <a href="portfolio/web.mobile/03/wireframe.pdf" data-type="iframe">기능정의서</a>
+                  </div>
+                </div> 
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="images/webpage04.PNG">
+                <div class="item-info uk-position-center-right uk-panel">
+                  <ul>
+                    <li>전체 웹사이트 퍼블리싱 #04</li>
+                    <li><span>작업기간</span>20일</li>
+                    <li><span>작업범위</span>XD UI디자인 및 웹 퍼블리싱(모바일제외)</li>
+                    <li><span>제작방식</span>HTML + CSS + JS</li>
+                    <li><span>작업참여</span>100%</li>
+                    <li><span>참고사항</span>코딩교육이수, 라이브러리 프로그램</li>
+                  </ul>
+                  <div class="item-btn" uk-lightbox>
+                    <a href="portfolio/web.mobile/04/index.html" data-type="iframe">PC</a>
+                    <a href="html/mobile-portfolio-04.html" data-type="iframe">Mobile</a>
+                    <a href="portfolio/web.mobile/04/wireframe.pdf" data-type="iframe">기능정의서</a>
+                  </div>
+                </div> 
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="images/webpage05.PNG">
+                <div class="item-info uk-position-center-right uk-panel">
+                  <ul>
+                    <li>전체 웹사이트 퍼블리싱 #05</li>
+                    <li><span>작업기간</span>20일</li>
+                    <li><span>작업범위</span>XD UI디자인 및 웹 퍼블리싱(모바일제외)</li>
+                    <li><span>제작방식</span>HTML + CSS + JS</li>
+                    <li><span>작업참여</span>100%</li>
+                    <li><span>참고사항</span>코딩교육이수, 라이브러리 프로그램</li>
+                  </ul>
+                  <div class="item-btn" uk-lightbox>
+                    <a href="portfolio/web.mobile/05/index.html" data-type="iframe">PC</a>
+                    <a href="html/mobile-portfolio-05.html" data-type="iframe">Mobile</a>
+                    <a href="portfolio/web.mobile/05/wireframe.pdf" data-type="iframe">기능정의서</a>
+                  </div>
+                </div> 
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="images/webpage06.PNG">
+                <div class="item-info uk-position-center-right uk-panel">
+                  <ul>
+                    <li>전체 웹사이트 퍼블리싱 #06</li>
+                    <li><span>작업기간</span>7일</li>
+                    <li><span>작업범위</span>포토샵 UI디자인 및 퍼블리싱</li>
+                    <li><span>제작방식</span>HTML + CSS + JQUERY</li>
+                    <li><span>작업참여</span>100%</li>
+                    <li><span>참고사항</span>모든 퍼블리싱 하드코딩으로 제작</li>
+                  </ul>
+                  <div class="item-btn" uk-lightbox>
+                    <a href="portfolio/web.mobile/06/index.html" data-type="iframe">PC</a>
+                    <a href="html/mobile-portfolio-06.html" data-type="iframe">Mobile</a>
+                    <a href="portfolio/web.mobile/06/wireframe.pdf" data-type="iframe">기능정의서</a>
+                  </div>
+                </div> 
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="images/webpage07.PNG">
+                <div class="item-info uk-position-center-right uk-panel">
+                  <ul>
+                    <li>전체 웹사이트 퍼블리싱 #07</li>
+                    <li><span>작업기간</span>7일</li>
+                    <li><span>작업범위</span>포토샵 UI디자인 및 퍼블리싱</li>
+                    <li><span>제작방식</span>HTML + CSS + JQUERY</li>
+                    <li><span>작업참여</span>100%</li>
+                    <li><span>참고사항</span>모든 퍼블리싱 하드코딩으로 제작</li>
+                  </ul>
+                  <div class="item-btn" uk-lightbox>
+                    <a href="portfolio/web.mobile/07/index.html" data-type="iframe">PC</a>
+                    <a href="html/mobile-portfolio-07.html" data-type="iframe">Mobile</a>
+                    <a href="portfolio/web.mobile/07/wireframe.pdf" data-type="iframe">기능정의서</a>
+                  </div>
+                </div> 
+              </div>
+            </li>
+          </ul>
+
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+            uk-slider-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+            uk-slider-item="next"></a>
+
+          <ul class="uk-slider-nav uk-dotnav uk-flex-center"></ul>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

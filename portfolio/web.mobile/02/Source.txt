@@ -1,0 +1,276 @@
+################### Navigation ###################
+
+Home
+About
+Project
+Plan & History
+Awards
+Location
+Contact
+
+Focus on your thoughts, your beliefs, and your values.
+Help
+
+################### Section : home ###################
+
+Our Business Global service
+
+<i class="fa fa-usd"></i>
+<i class="fa fa-btc"></i>
+
+#7bed9f
+
+Commercial
+Corporate
+Investment
+
+################### Section : about ###################
+
+
+Save on interest
+With the BankAmericard® credit card, get a 0% intro APR offer, plus no annual fee.
+
+Get checking with the right features
+Including a $0 Liability Guarantee that helps cover you from unauthorized transactions.
+
+Invest your way
+We have tools, the people and the insights to help you create a personalized strategy to pursue your goals.
+
+#1289A7
+
+################### Section : project ###################
+
+Project : Business Banking
+
+[Dummy Text with Lorem40]
+
+Users : 89M+
+Platform : $278B+
+Employees : 3,700+
+139+
+TRADING
+172+
+CUSTODY
+$320M
+INSURANCE
+
+Project : Hallway of Architecture
+
+[Dummy Text with Lorem40]
+
+Verified users : 89M+
+Assets on Platform : $278B+
+Employees : 3,700+
+139+
+trading
+172+
+Custody
+$320M
+Insurance
+
+
+Project : Outside Stairs Architecture
+
+[Dummy Text with Lorem40]
+
+Verified users : 89M+
+Assets on Platform : $278B+
+Employees : 3,700+
+139+
+trading
+172+
+Custody
+$320M
+Insurance
+
+
+#6ab04c
+
+################### Section : plan ###################
+
+Planning For the Next Project
+
+[Dummy Text with Lorem50]
+
+Our products
+
+Prime
+
+An integrated solution that provides an advanced trading platform, secure custody, and prime services so you can manage your crypto assets in one place
+
+Exchange
+
+The deepest pool of liquidity of any regulated crypto spot exchange, directly accessible via our easy-to-use, high throughput APIs
+
+API Infrastructure
+
+For financial institutions, a suite of lightweight integration options to provide your customers with a market-leading crypto experience
+
+Private Client
+
+A dedicated trading desk and personalized support from experts to navigate crypto in a secure, regulated, and compliant manner
+
+Execution services
+
+Our execution services team is available across multiple time zones to assess market conditions
+
+Treasury Management
+
+Our crypto-forward roots mean that we are constantly updating our offering to include crypto native features for our clients
+
+Liquidity Program
+
+Clients who provide large amounts of liquidity to Coinbase can receive additional benefits
+
+best all-in pricing
+
+Our smart order router allows access to the broader crypto market, securing the lowest price we can find in our network of venues
+
+
+
+################### Section : awards-winner ###################
+
+2020 Architecture Award Winner
+Based on your trade execution goals, our algorithms can be used to optimize for a number of different factors. Whether your goal is to execute a trade as quickly as possible, or to trade passively over the course of several days, we can help you get there.
+
+view the More
+
+################### Section : location ###################
+
+Institutions choose Coinbase
+Comprehensive Platform
+
+We have the most comprehensive suite of crypto forward products and services with advanced trading, custody, execution services, financing, analytics, infrastructure, and high touch support.
+
+Crypto native features
+Crypto-first DNA
+
+We are one of the first publicly traded companies to hold bitcoin and other crypto assets on our balance sheet. This experience, along with our crypto native staking and governance products, make Coinbase Institutional a trusted partner for institutions looking to invest in crypto.
+
+
+
+White-label solutions
+
+Coinbase has the turnkey solution to white-label, with all the tools needed to easily offer digital assets to your customers
+
+Crypto infrastructure
+
+Coinbase Institutional APIs power the backend of your crypto experience
+
+Comprehensive
+
+Trading, storage, transfers, onboarding, compliance, and more
+
+
+<i class="fa fa-clock-o"></i>
+<i class="fa fa-cog"></i>
+<i class="fa fa-book"></i>
+
+################### Section : contact ###################
+
+Contact Us
+Feel free to ask for details, dont’save any questions.
+
+Email *
+Subject *
+Message *
+send messages
+
+Our Office
+
+Address : Address: 309, New Cavendish St, EC1Y 3WK
+Phone : 0800 214 5252
+Email : designworks@designworks.com
+
+Business Hours
+
+Monday - Friday : 9am to 5pm
+Saturday : 9am to 2pm
+Sunday : Closed
+
+Get in Touch
+
+ Coinbase Prime was built to serve institutional teams investing at scale. We’ve designed operational controls and permissioning that institutions need to invest in digital assets.
+Access real-time and historical analytics for cryptocurrency spot and derivatives markets — all within the Coinbase Prime interface.
+
+################### Sub Page Modal : hiring ###################
+
++ HIRING
+
+Come work with us
+
+Together we can make an impact
+
+Design Works offers the excitement of an entrepreneurial environment with the stability of an established practice. Principals and senior leadership work side-by-side with junior designers to create innovative, workable designs. With our global practice, we are currently creating the next generation of healthy, experience-based urban neighborhoods and resorts.
+
+Every summer we offer a Fellowship to a select group of students in architecture, planning and landscape architecture. Read about our 2019 Fellowship winners and learn more about what the Fellowship has to offer.
+
+We’re always looking for talent
+
+If you don’t see an open position that fits your talents, send us your resume. We’re always looking for smart, self-starters and will reach out to you if something becomes available.
+
+NEW YORK
+Sally Jung
+123.4556.7890
+newyork@designworks.com
+ 
+SAN FRANCISCO
+John Kim
+123.4556.7890
+sanfrancisco@designworks.com
+   
+Please do not hesitate to contact us. Thanks.
+
+################### Sub Page Modal : Project01~03 ###################
+
+PROJECT
+We design complete environments
+
++ Project Descriptions #01
+
+[Dummy Text with Lorem100]
+
+Area : 1670 m2
+Completed Date : September 2018
+Architect : Andrew Yu
+Working day : 225
+Member : 320
+Budget : 3M
+
+Area : 2345 m2
+Completed Date : April 2019
+Architect : Robert Kim
+Working day : 321
+Member : 420
+Budget : 8M
+
+Area : 1200 m2
+Completed Date : May 2020
+Architect : Christine Jung
+Working day : 132
+Member : 202
+Budget : 5M
+
+Today it is busily, loudly rebounding.
+
+[Dummy Text with Lorem100]
+
+invisible city was a space of cybernetic
+
+[Dummy Text with Lorem100]
+
+This work-network shared in Zoom-mode
+
+[Dummy Text with Lorem100]
+
+We combine planning, architecture, landscape architecture, and interior design as a single professional service to design complete environments that steward natural resources, enhance value for clients, and create communities that endure over time.
+
+
+/* Google Web Font : Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');

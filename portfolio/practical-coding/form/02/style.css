@@ -1,0 +1,100 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+  background-color: #eee;
+  color: #222;
+  line-height: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  height: 60px;
+  padding-top: 13px;
+  text-align: center;
+  box-sizing: border-box;
+}
+section {
+  height: calc(100vh - 60px);
+  position: relative;
+}
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+}
+.login-type h1 {
+  margin-top: 0;
+  font-size: 38px;
+  font-weight: normal;
+  text-align: center;
+}
+.btn {
+  border: 1px solid #eee;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+  color: #fff;
+  opacity: 0.8;
+}
+.btn:nth-of-type(1) {
+  color: #000;
+  background: #fff url(images/logo-mobile.png) no-repeat center left 10px;
+}
+.btn:nth-of-type(2) {
+  background: #34465D url(images/logo-email.png) no-repeat center left 13px;
+}
+.btn:nth-of-type(3) {
+  background: #00C300 url(images/logo-naver.png) no-repeat center left 13px;
+}
+.btn:nth-of-type(4) {
+  background: #1877F2 url(images/logo-facebook.png) no-repeat center left 13px;
+}
+.btn:nth-of-type(5) {
+  background: #25D366 url(images/logo-line.png) no-repeat center left 13px;
+}
+.btn:hover {
+  opacity: 1;
+}
+.or-text {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.or-text::before,
+.or-text::after {
+  content: '';
+  position: absolute;
+  background-color: #ccc;
+  height: 1px;
+  width: 42%;
+  top: 10px;
+}
+.or-text::before {
+  left: 0;
+}
+.or-text::after {
+  right: 0;
+}
+.login-footer p {
+  text-align: center;
+}
+.login-footer p a {
+  font-weight: normal;
+}
+.login-footer p a:hover {
+  text-decoration: underline;
+}

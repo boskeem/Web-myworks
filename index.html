@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김보성(boskeem) | 웹 공작소</title>
+  <link rel="icon" href="images/favicon.png">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="custom.js"></script>
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="plugin/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugin/slick/slick.css">
+  <script src="plugin/slick/slick.min.js"></script>
+  <!-- Featherlight.js -->
+  <script src="js/featherlight/featherlight.js"></script>
+  <link rel="stylesheet" href="js/featherlight/featherlight.css">
+  <!-- Wow Scroll Reveal Animation -->
+  <script src="plugin/wow.min.js"></script>
+  <!-- TypeIt -->
+  <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+</head>
+<body>
+  
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="header-inner">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="gnb">
+          <a href="#view1" data-text="about"></a>
+          <a href="#view2" data-text="skill"></a>
+          <a href="#view3" data-text="portfolio"></a>
+          <a href="#view4" data-text="epilogue"></a>
+        </div>
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <!-- Section : Welcome -->
+    <section class="welcome">
+      <div class="welcome-photo"></div>
+      <div class="welcome-heading">
+        <h1>
+          안녕하세요, <br>
+          저는 웹 서비스의 소금이 될 신입 <br>
+          <em id="typingjob"></em>
+        </h1>
+        <div class="btn">
+          <a href="wireframe.pdf">view my works <i class="fa fa-external-link"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- Section : About -->
+    <section class="about" id="view1">
+      <div class="about-inner">
+        <div class="about-content">
+          <div class="about-left ltr wow">
+            <div class="about-photo">
+              <img src="images/me.jpg">
+            </div>
+          </div>
+          <div class="about-right rtl wow">
+            <div class="about-me">
+              <h2>김보성</h2>
+              <p>
+                <b>어제보다 오늘, 오늘보다 내일 더 성장하는 사람</b>
+                <br>
+                안녕하세요. 저는 웹퍼블리셔(마크업 개발자)를 꿈꾸며 '꾸준한 오늘이 있기에 내일은 무한하다' 는 마인드를 가지고 자기계발 및 문제해결에 열정적으로 임하는 사람입니다. 
+                저에게 있어 웹퍼블리셔(마크업)은 동기부여 그 자체입니다. 새로운 앞 날을 기대하고 기댈 수 있는 시작을 제공하였기에 저도 그 희망과 목표에 접근하며 겸손하고 배우는 자세로 즐겁게 일하고자 합니다.
+              </p>
+              <span>생년월일<em>|</em> 1996.07.27</span>
+              <span>나이<em>|</em> 27</span>
+              <span>사는 곳<em>|</em> 경기도 수원시 영통</span>
+              <span>이메일<em>|</em> kodory123@naver.com</span>
+              <span>프리랜서 여부<em>|</em> 수습기간 후 가능</span>
+            </div>
+            <div class="btn">
+              <a href="https://sun-monarch-83e.notion.site/47f50737b31f4c459f00fcf40d5a2d50">my resume <i class="fa fa-external-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section : Skill -->
+    <section class="skill" id="view2">
+      <div class="skill-inner">
+        <div class="headline-share">
+          <h1>Skill</h1>
+          <p>개인적으로 충분한 경험을 가지고 웹 서비스에서 활용될 기술과 다룰 수 있는 아트 툴을 기재하였습니다.</p>
+        </div>
+        <div class="skill-content">
+          <div class="skill-items">
+            <div class="skill-box utd wow">
+              <div class="skill-icon">
+                <img src="images/html5.png">
+              </div>
+              <h3>HTML 5</h3>
+              <p>
+                웹 표준과 웹 접근성을 준수하는
+                HTML5 정보 구조 설계로 웹사이트 퍼블리싱을
+                하고 있습니다. 퍼블리싱 작업 전에 ‘기능정의서’를 만들어
+                폰트, 컬러, 사이즈 정보, 상호작용 여부, 와이어프레임까지
+                꼼꼼하게 정리해두고 제계적인 퍼블리싱 작업을 수행합니다. 
+              </p>
+            </div>
+            <div class="skill-box utd wow">
+              <div class="skill-icon">
+                <img src="images/css3.png">
+              </div>
+              <h3>CSS 3</h3>
+              <p>
+                CSS 코딩은 IE를 지원을 충분히 고려하는
+                크로스브라우징(Cross Browsing)을 위해
+                안정적인 css 속성을 사용해서
+                HTML Elements를 배치하고 심미적으로 디자인 합니다.
+                CSS3에서 새롭게 지원하는 속성을 활용해서
+                다양한 CSS 배치와 디자인을 다룹니다.
+              </p>
+            </div>
+            <div class="skill-box utd wow">
+              <div class="skill-icon">
+                <img src="images/js.png">
+              </div>
+              <h3>JS</h3>
+              <p>
+                네비게이션, 탭 메뉴, 어코디언 등
+                웹 퍼블리싱에 반드시 필요한 상호작용을 위한 제이쿼리는
+                플러그인을 사용하지 않고 순수만 제이쿼리 코딩으로 제작합니다.
+                필수적인 자바스크립트 활용이 가능하며
+                주로 제이쿼리와 병행해서 활용하고 있습니다. (if 조건문, for 반복문 등)
+              </p>
+            </div>
+            <div class="skill-box utd wow">
+              <div class="skill-icon">
+                <img src="images/text-editor.png">
+              </div>
+              <h3>TEXT EDITOR</h3>
+              <p>
+                웹 퍼블리셔로서 텍스트 에디터는
+                Visual Studio Code를 메인으로 사용하고 있으며
+                상황에 따라 Adobe Brackets를 병행해서 사용하기도 합니다.
+                부분 수정 또는 HTML5 와이어 프레임 구조를 설계할 때
+                수월한 퍼블리싱을 위해 NotePad++를 적극 활용합니다.
+              </p>
+            </div>
+            <div class="skill-box dtu wow">
+              <div class="skill-icon">
+                <img src="images/responsive.png">
+              </div>
+              <h3>RESPONSIVE WEB</h3>
+              <p>
+                반응형 웹 제작의 크로스브라우징을 위해
+                안정적인 기존 방식인 float, position, Media Query를
+                활용한 경험을 가지고 있습니다.
+                필요에 따라 플렉스(Flex)와 그리드(Grid)로
+                반응형 웹 사이트 제작이 가능합니다.
+                모바일 웹 앱 제작의 경우 Flex와 Grid를 활용해서 제작할 수 있습니다.
+              </p>
+            </div>
+            <div class="skill-box dtu wow">
+              <div class="skill-icon">
+                <img src="images/mobile-web.png">
+              </div>
+              <h3>MOBILE WEB APP</h3>
+              <p>
+                모바일 우선을 위해 모바일 웹 앱 제작 경험과 UI/UX 측면에서
+                심미적인 요소와 모바일 사용자 경험의 최적화를 위해
+                효율적인 콘텐츠를 배치를 우선적으로 생각합니다.
+                또한 모바일 대응을 위한 플랫폼으로 반응형 웹, 모바일 웹, 모바일 웹 앱, 네이티브 앱에 대한 이해도가 있습니다.
+              </p>
+            </div>
+            <div class="skill-box dtu wow">
+              <div class="skill-icon">
+                <img src="images/photoshop.png">
+                <img src="images/illust.png">
+                <img src="images/primere.png">
+                <img src="images/draw.png">
+              </div>
+              <h3>GRAPHIC</h3>
+              <p>
+                배너, 이벤트, 로고 등의 웹 그래픽 아트웍은 포토샵과 XD, 일러스트 위주로
+                사용합니다. 포토샵과 XD는 웹사이트 UI 디자인 작업 시 충분히 활용 가능하며,
+                영상 편집 및 제작과 트랜지션 경험은 프리미어를 사용하고 그래픽 아트웍은
+                타블렛 장비를 곁들여 사용합니다.
+              </p>
+            </div>
+            <div class="skill-box dtu wow">
+              <div class="skill-icon">
+                <img src="images/xd.png">
+              </div>
+              <h3>XD</h3>
+              <p>
+                웹사이트 UI 디자인 시 XD와 포토샵을 활용하고 있습니다.
+                다양한 효과가 돋보이는 요소 및 사용자 경험을 고려한 만족도 높은 디자인으로 설계할 수 있습니다. 또한 디자인 측면과 기능적인 측면에서 상호작용 시 불편함을 최소화하며 심미적으로도 훌륭한 디자인 요소를 제공합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section : Portfolio -->
+    <section class="portfolio" id="view3">
+      <div class="portfolio-inner">
+        <div class="headline-share">
+          <h1>Publishing / Web & Design Portfolio</h1>
+          <p>
+            실전에서 응용될 다양한 예제의 퍼블리싱과 웹사이트 & 모바일 반응형 페이지, 그래픽 소스를 활용한 아트웍 및 XD, Photoshop에 기반한 웹페이지를 제작하였습니다.
+          </p>
+        </div>
+        <div class="portfolio-content">
+          <div class="box utd wow">
+            <a href="practical.html"><img src="images/pf-1.PNG"></a>
+            <span>PRACTICAL PUBLISHING</span>
+          </div>
+          <div class="box utd wow" data-wow-delay="0.25s">
+            <a href="design.html"><img src="images/pf-2.PNG"></a>
+            <span>DESIGN WORKS</span>
+          </div>
+          <div class="box utd wow" data-wow-delay="0.5s">
+            <a href="website.html"><img src="images/pf-3.PNG"></a>
+            <span>WEB PAGE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section : Epilogue -->
+    <section class="epilogue" id="view4">
+      <div class="epilogue-inner">
+        <div class="headline-share">
+          <h1>Epilogue</h1>
+        </div>
+        <div class="epilogue-content slider">
+          <div class="epilogue-item">
+            <div class="epilogue-photo">
+              <img src="images/epi01.jpg">
+            </div>
+            <div class="epilogue-text">
+              <h3>고민보다 GO!</h3>
+              <p>
+                저는 가진 재능보다 이상이 훨씬 큰 사람입니다. <br>
+                제 자신을 꾸준히 움직일 수 있게 하는 원동력은 모니터 앞에서 하고 있는 퍼블리싱입니다. 지금 업계 최고를 달리는 대표기업과 CEO를 쫓아 어깨를 나란히 할 수는 없지만, 저의 표지판이자 좌표입니다. 저의 역량을 갖추기 위해 제가 가진 도전정신과 자신감을 바탕으로 그들의 장점을 배우고 꾸준하게 노력하며 팀 내에서의 커뮤니케이션과 문제해결 과정에서 도움이 될 수 있을거라 자신합니다.
+              </p>
+            </div>
+          </div>
+          <div class="epilogue-item">
+            <div class="epilogue-photo">
+              <img src="images/epi02.jpg">
+            </div>
+            <div class="epilogue-text">
+              <h3>No one is perfect.</h3>
+              <p>
+                But,...
+                Everything will be perfect. <br>
+                하나를 배우더라도 튼튼한 집 한 채를 완성한다는 생각으로
+                업무에 임하고자 합니다. 모든 것을 완벽하게 하기까지 시간과 노력이 들겠지만 헛되이 여기지 않으며 조직의 이익을 위해, 보상을 위해, 삶의 일부를 위해 도전하고 있습니다. 저는 대외활동을 통해 단체 생활을 자주 겪었기에 누구보다 관계성에 충실합니다. 경청하고 소통하는 자세로 어울리며 혼자 나서기 보다는
+                함께 나누고 공감하고 존중하는 그릇이 넓은 일원이 되고자 합니다.
+              </p>
+            </div>
+          </div>
+          <div class="epilogue-item">
+            <div class="epilogue-photo">
+              <img src="images/epi03.jpg">
+            </div>
+            <div class="epilogue-text">
+              <h3>carpe diem!</h3>
+              <p>
+                무엇보다도 새해의 제 목표는 현재에 충실하고 지금 이 순간을 즐기자는 마인드로 임하고 있습니다. 배움에 있어 한계를 두지 않으려고 하며, 생각은 자유롭게 하되 약점을 최대한의 장점으로 변화시키기 위해 계획과 규칙을 중요시하며 차근차근 지켜나가고 있습니다.
+                지나갈 과거와 다가올 미래에 대해 걱정하는 것보다 오늘 하루를 충분히 보내며 제가 가진 끈기로 뒤돌아 후회하지 않고 앞서 나가는 모습을 보여드리겠습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+          <span>COPYRIGHT © 2022 BOSKEEM. ALL RIGHTS RESERVED.</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Go to top -->
+  <a class="btn-top" href="#"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- TypeIt - Welcome -->
+  <script>
+    new TypeIt("#typingjob", {
+      strings: "웹퍼블리셔 김보성입니다.",
+      speed: 280,
+      loop: true,
+      waitUntilVisible: true,
+    }).go();
+  </script>
+
+</body>
+</html>

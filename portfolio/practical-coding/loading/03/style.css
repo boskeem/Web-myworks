@@ -1,0 +1,58 @@
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+}
+
+.frame i {
+  font-size: 10em;
+  color: #fff;
+  margin: 10px;
+  animation: hue-rotate 3s linear infinite;
+}
+.frame i:nth-child(1) {
+  text-shadow: 0 0 30px #f0932b,
+                    0 0 60px #f0932b,
+                    0 0 90px #f0932b,
+                    0 0 120px #f0932b;
+}
+.frame i:nth-child(2) {
+  text-shadow: 0 0 30px #ff6b81,
+                    0 0 60px #ff6b81,
+                    0 0 90px #ff6b81,
+                    0 0 120px #ff6b81;
+}
+.frame i:nth-child(3) {
+  text-shadow: 0 0 30px #5352ed,
+                    0 0 60px #5352ed,
+                    0 0 90px #5352ed,
+                    0 0 120px #5352ed;
+}
+.frame i:nth-child(4) {
+  text-shadow: 0 0 30px #2ed573,
+                    0 0 60px #2ed573,
+                    0 0 90px #2ed573,
+                    0 0 120px #2ed573;
+}
+.frame i:nth-child(5) {
+  text-shadow: 0 0 30px #ffa502,
+                    0 0 60px #ffa502,
+                    0 0 90px #ffa502,
+                    0 0 120px #ffa502;
+}
+
+
+@keyframes hue-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <filter id="Ellipse_74" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="btn_hamberger" transform="translate(-225 -27)">
+    <g transform="matrix(1, 0, 0, 1, 225, 27)" filter="url(#Ellipse_74)">
+      <circle id="Ellipse_74-2" data-name="Ellipse 74" cx="21" cy="21" r="21" transform="translate(15 12)" fill="#fff"/>
+    </g>
+    <g id="trigger" transform="translate(-1358 -325)">
+      <path id="Union_2" data-name="Union 2" d="M0,22V20H20v2Zm0-8V12H20v2ZM0,6V4H20V6Z" transform="translate(1609 372)" fill="#d31045"/>
+    </g>
+  </g>
+</svg>

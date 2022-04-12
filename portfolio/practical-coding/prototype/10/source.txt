@@ -1,0 +1,6 @@
+자바스크립트 BGM 사운드 재생 제어하기
+
+<i class="fa fa-play"></i>
+<i class="fa fa-pause"></i>
+<i class="fa fa-stop"></i>
+------------------------------------

@@ -1,0 +1,459 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* Noonnu Korean Fonts */
+@font-face {
+  font-family: 'Cafe24Ohsquareair';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/Cafe24Ohsquareair.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reset CSS */
+* { box-sizing: border-box; }
+a {
+  text-decoration: none;
+  color: #fff;
+}
+button, input { outline: none; }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+/* Default CSS */
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  background-color: #303952;
+  color: #333;
+  margin: 0;
+}
+
+/* Common CSS */
+section {
+  padding: 100px 0;
+}
+section:nth-child(even) {
+  background-color: #f8f2e4;
+  color: #333;
+}
+.headline-share {
+  text-align: center;
+}
+.headline-share h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 42px;
+  text-transform: capitalize;
+  position: relative;
+  padding: 30px;
+}
+.headline-share h1::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #e77f67;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.headline-share p {
+  font-size: 15px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+/* Go to top */
+.btn-top {
+  position: fixed;
+  right: 20px;
+  bottom: -50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.5s;
+}
+.btn-top.active {
+  bottom: 20px;
+}
+
+
+/* Publishing Content */
+/* ####################### Header ####################### */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: 0.5s;
+}
+header.active {
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+header.active .gnb a {
+  color: #000;
+}
+.header-inner {
+  width: 1280px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.gnb a {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 5px;
+  width: 120px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.gnb a::before,
+.gnb a::after {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  transition: 0.35s;
+}
+.gnb a::before {
+  top: 0;
+  left: 0;
+}
+.gnb a::after {
+  top: 100%;
+  left: 0;
+  color: #e77f67;
+}
+.gnb a:hover::before {
+  top: -100%;
+}
+.gnb a:hover::after {
+  top: 0;
+}
+
+/* Trigger */
+.trigger {
+  display: none;
+}
+
+/* ################# section : Welcome ################# */
+section.welcome {
+  height: 100vh;
+  padding: 0;
+  background: url(images/welcome-bg.jpg) no-repeat center center;
+  overflow: hidden;
+  position: relative;
+}
+.welcome-photo::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.welcome-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.welcome-heading h1 {
+  font-family: 'Cafe24Ohsquareair';
+  font-size: 52px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 60px;
+}
+.welcome-heading h1 em {
+  color: #ff9f43;
+}
+.btn a {
+  background-color: #ff6348;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: 300;
+  padding: 10px 18px;
+  border-radius: 10px;
+}
+
+/* ################# section : About ################# */
+.about-inner {
+  width: 1280px;
+  margin: auto;
+}
+.about-content {
+  overflow: hidden;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+}
+.about-content > div {
+  /* float: left;
+  width: 50%; */
+  flex: 1;
+}
+.about-photo {
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto;
+}
+.about-photo img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.about-me {
+  color: #fff;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.about-me p {
+  font-size: 16px;
+  font-weight: 300;
+  width: 500px;
+}
+.about-me p b {
+  color: #ff9f43;
+}
+.about-me span {
+  display: block;
+  font-size: 16px;
+}
+.about-me span em {
+  font-style: normal;
+  color: #ff9f43;
+  font-size: 10px;
+  margin: 5px;
+  display: inline-block;
+  transform: translateY(-3px);
+}
+
+/* ################# section : Skill ################# */
+.skill-inner {
+  width: 1280px;
+  margin: auto;
+}
+.skill-content {
+  padding: 30px 0;
+}
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.skill-icon img {
+  width: 20%;
+  filter: invert(37%) sepia(73%) saturate(438%) hue-rotate(153deg) brightness(88%) contrast(96%);
+}
+.skill-box {
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 360px;
+  border-radius: 8px;
+  padding: 20px;
+}
+.skill-box h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #227093;
+  padding: 10px 0;
+}
+.skill-box p {
+  font-size: 15px;
+}
+
+/* ################ section : Portfolio ################# */
+.portfolio-inner {
+  width: 1280px;
+  margin: auto;
+  color: #fff;
+}
+.portfolio-content {
+  text-align: center;
+  padding: 30px 0;
+}
+.box {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 350px;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hover Effects */
+.box a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.box:hover a::before {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.box span {
+  position: absolute;
+  color: #ff9f43;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 1.2em;
+}
+.box:hover span {
+  opacity: 1;
+}
+
+/* ################# section : Epilogue ################# */
+.epilogue-inner {
+  width: 1280px;
+  margin: auto;
+}
+.epilogue-content {
+  text-align: center;
+  padding: 30px 0;
+}
+.epilogue-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: auto;
+}
+.epilogue-photo img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.epilogue-text {
+  padding-top: 30px;
+}
+.epilogue-text h3 {
+  font-size: 18px;
+}
+.epilogue-text p {
+  font-size: 16px;
+  width: 600px;
+  margin: auto;
+}
+
+/* ####################### Footer ####################### */
+footer {
+  background-color: #e77f67;
+}
+.footer-inner {
+  width: 1280px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* ▦▦▦▦▦▦▦ Scroll Reveal CSS Animation ▦▦▦▦▦▦▦ */
+.ltr { animation: ltr 0.5s linear both; }
+.rtl { animation: rtl 0.5s linear both; }
+.utd { animation: utd 0.5s linear both; }
+.dtu { animation: dtu 0.5s linear both; }
+
+@keyframes ltr {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes rtl {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes utd {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes dtu {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ▦▦▦▦▦▦▦▦▦ Slick Custom CSS ▦▦▦▦▦▦▦▦▦ */
+/* arrow */
+.slider .slick-prev:before,
+.slider .slick-next:before {
+  content:"\f104";
+  font-family: fontawesome;
+  color: #aaa69d;
+  font-size: 30px;
+  opacity: 1;
+}
+.slider .slick-next:before {
+  transform: rotateY(180deg);
+  display: block;
+}

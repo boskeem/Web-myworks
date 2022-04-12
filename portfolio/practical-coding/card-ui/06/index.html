@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로필 카드 UI 디자인(다크모드)</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="frame">
+    <div class="profile">
+      <div class="face">
+        <img src="images/face.jpg">
+        <i class="xi-plus-min"></i>
+      </div>
+      <h1>Kelly Kim<span>Class in WebDwsign</span></h1>
+      <p>
+        I'm a web publisher, Kelly. <br>
+        I'm looking forward to a good project. <br>
+        please call back.
+        <span>kellykim@google.com</span>
+      </p>
+      <a href="#none" class="view-portfolio">view my portfolio</a>
+      <div class="sns">
+        <div>
+          <i class="xi-instagram"></i>
+          <span><big>12.8k</big>followers</span>
+        </div>
+        <div>
+          <i class="xi-facebook"></i>
+          <span><big>10.5k</big>followers</span>
+        </div>
+        <div>
+          <i class="xi-twitter"></i>
+          <span><big>16.3k</big>followers</span>
+        </div>
+      </div>
+      <div class="btn-mode"></div>
+      <div class="like-more">
+        <span class="btn-like"></span>
+        <span class="btn-more"><i class="xi-ellipsis-v"></i></span>
+      </div>
+    </div>
+    <div class="profile dark">
+      <div class="face">
+        <img src="images/face.jpg">
+        <i class="xi-plus-min"></i>
+      </div>
+      <h1>Kelly Kim<span>Class in WebDwsign</span></h1>
+      <p>
+        I'm a web publisher, Kelly. <br>
+        I'm looking forward to a good project. <br>
+        please call back.
+        <span>kellykim@google.com</span>
+      </p>
+      <a href="#none" class="view-portfolio">view my portfolio</a>
+      <div class="sns">
+        <div>
+          <i class="xi-instagram"></i>
+          <span><big>12.8k</big>followers</span>
+        </div>
+        <div>
+          <i class="xi-facebook"></i>
+          <span><big>10.5k</big>followers</span>
+        </div>
+        <div>
+          <i class="xi-twitter"></i>
+          <span><big>16.3k</big>followers</span>
+        </div>
+      </div>
+      <div class="btn-mode"></div>
+      <div class="like-more">
+        <span class="btn-like"></span>
+        <span class="btn-more"><i class="xi-ellipsis-v"></i></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.btn-mode').click(function(){
+      $('.profile').toggleClass('dark');
+    })
+    $('.btn-like').click(function(){
+      $(this).toggleClass('active')
+    })
+  </script>
+
+</body>
+</html>

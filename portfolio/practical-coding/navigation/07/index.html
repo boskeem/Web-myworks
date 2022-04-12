@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>네비게이션 – flex 반응형 헤더</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="#none"><img src="images/logo.png"></a>
+			</div>
+			<ul class="gnb">
+				<li><a href="#none">Home</a></li>
+				<li><a href="#none">About</a></li>
+				<li><a href="#none">Tech</a></li>
+				<li><a href="#none">Plan</a></li>
+				<li><a href="#none">Awards</a></li>
+				<li><a href="#none">FaQ</a></li>
+				<li><a href="#none">Contact</a></li>
+			</ul>
+			<div class="sns">
+				<a href="#none"><i class="fa fa-facebook"></i></a>
+				<a href="#none"><i class="fa fa-twitter"></i></a>
+				<a href="#none"><i class="fa fa-youtube-play"></i></a>
+			</div>
+			<div class="trigger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+	</header>
+
+	<script>
+		$('.trigger').click(function(){
+			$(this).toggleClass('active')
+			$('.gnb, .sns').toggle()
+		})
+	</script>
+
+</body>
+</html>
